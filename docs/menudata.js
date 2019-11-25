@@ -47,9 +47,11 @@ var menudata={children:[
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
 {text:"c",url:"globals.html#index_c"},
-{text:"m",url:"globals_m.html#index_m"}]},
+{text:"m",url:"globals_m.html#index_m"},
+{text:"s",url:"globals_s.html#index_s"}]},
 {text:"Functions",url:"globals_func.html",children:[
-{text:"c",url:"globals_func.html#index_c"}]},
+{text:"c",url:"globals_func.html#index_c"},
+{text:"s",url:"globals_func_s.html#index_s"}]},
 {text:"Variables",url:"globals_vars.html"},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},

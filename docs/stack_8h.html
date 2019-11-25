@@ -134,9 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5a2b564ef6f584a2f7665ca0ee3763dd"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a5a2b564ef6f584a2f7665ca0ee3763dd">cdc_stack_push</a> (struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *s, void *elem)</td></tr>
 <tr class="memdesc:a5a2b564ef6f584a2f7665ca0ee3763dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds element elem to the top of the stack.  <a href="#a5a2b564ef6f584a2f7665ca0ee3763dd">More...</a><br /></td></tr>
 <tr class="separator:a5a2b564ef6f584a2f7665ca0ee3763dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379ba15422653fa745a1831a260b5b10"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a379ba15422653fa745a1831a260b5b10">cdc_stack_pop</a> (struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *s)</td></tr>
-<tr class="memdesc:a379ba15422653fa745a1831a260b5b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the top item from the stack. This function assumes that the stack isn't empty.  <a href="#a379ba15422653fa745a1831a260b5b10">More...</a><br /></td></tr>
-<tr class="separator:a379ba15422653fa745a1831a260b5b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cb6e4f78ae04d722597c4c89982b34"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#aa2cb6e4f78ae04d722597c4c89982b34">cdc_stack_pop</a> (struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *s)</td></tr>
+<tr class="memdesc:aa2cb6e4f78ae04d722597c4c89982b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the top item from the stack. This function assumes that the stack isn't empty.  <a href="#aa2cb6e4f78ae04d722597c4c89982b34">More...</a><br /></td></tr>
+<tr class="separator:aa2cb6e4f78ae04d722597c4c89982b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9fa449c3f49cd850fc7b979c2941b92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#af9fa449c3f49cd850fc7b979c2941b92">cdc_stack_swap</a> (struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *a, struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *b)</td></tr>
 <tr class="memdesc:af9fa449c3f49cd850fc7b979c2941b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps stack a and b. This operation is very fast and never fails.  <a href="#af9fa449c3f49cd850fc7b979c2941b92">More...</a><br /></td></tr>
 <tr class="separator:af9fa449c3f49cd850fc7b979c2941b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,8 +353,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a379ba15422653fa745a1831a260b5b10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a379ba15422653fa745a1831a260b5b10">&#9670;&nbsp;</a></span>cdc_stack_pop()</h2>
+<a id="aa2cb6e4f78ae04d722597c4c89982b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cb6e4f78ae04d722597c4c89982b34">&#9670;&nbsp;</a></span>cdc_stack_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +363,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_stack_pop </td>
+          <td class="memname">static void cdc_stack_pop </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -384,7 +384,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
 
 </div>
 </div>

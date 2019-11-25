@@ -115,9 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af337e2375cfd585dcdb060cbcf83c3ff"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#af337e2375cfd585dcdb060cbcf83c3ff">cdc_heap_empty</a> (struct <a class="el" href="structcdc__heap.html">cdc_heap</a> *h)</td></tr>
 <tr class="memdesc:af337e2375cfd585dcdb060cbcf83c3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the heap has size 0; otherwise returns false.  <a href="#af337e2375cfd585dcdb060cbcf83c3ff">More...</a><br /></td></tr>
 <tr class="separator:af337e2375cfd585dcdb060cbcf83c3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ebd0169ee577af9629cf2216a8739fb"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#a4ebd0169ee577af9629cf2216a8739fb">cdc_heap_extract_top</a> (struct <a class="el" href="structcdc__heap.html">cdc_heap</a> *h)</td></tr>
-<tr class="memdesc:a4ebd0169ee577af9629cf2216a8739fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the top item from the heap. This function assumes that the heap isn't empty.  <a href="#a4ebd0169ee577af9629cf2216a8739fb">More...</a><br /></td></tr>
-<tr class="separator:a4ebd0169ee577af9629cf2216a8739fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6882a32a391930be86f25a2bcd56dc90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#a6882a32a391930be86f25a2bcd56dc90">cdc_heap_extract_top</a> (struct <a class="el" href="structcdc__heap.html">cdc_heap</a> *h)</td></tr>
+<tr class="memdesc:a6882a32a391930be86f25a2bcd56dc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the top item from the heap. This function assumes that the heap isn't empty.  <a href="#a6882a32a391930be86f25a2bcd56dc90">More...</a><br /></td></tr>
+<tr class="separator:a6882a32a391930be86f25a2bcd56dc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3655c6e99e2fa34de6ea3089294dec5"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="heap_8h.html#af3655c6e99e2fa34de6ea3089294dec5">cdc_heap_riinsert</a> (struct <a class="el" href="structcdc__heap.html">cdc_heap</a> *h, void *key, struct <a class="el" href="structcdc__heap__iter.html">cdc_heap_iter</a> *ret)</td></tr>
 <tr class="memdesc:af3655c6e99e2fa34de6ea3089294dec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts element key to the heap. Write an iterator pointing to a new element in the ret.  <a href="#af3655c6e99e2fa34de6ea3089294dec5">More...</a><br /></td></tr>
 <tr class="separator:af3655c6e99e2fa34de6ea3089294dec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,14 +407,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ebd0169ee577af9629cf2216a8739fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ebd0169ee577af9629cf2216a8739fb">&#9670;&nbsp;</a></span>cdc_heap_extract_top()</h2>
+<a id="a6882a32a391930be86f25a2bcd56dc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6882a32a391930be86f25a2bcd56dc90">&#9670;&nbsp;</a></span>cdc_heap_extract_top()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_heap_extract_top </td>
+          <td class="memname">void cdc_heap_extract_top </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__heap.html">cdc_heap</a> *&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
@@ -430,7 +430,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
 
 </div>
 </div>

@@ -116,9 +116,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aeee83de7c56e63e71ccae94f085e3dad"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority-queue_8h.html#aeee83de7c56e63e71ccae94f085e3dad">cdc_priority_queue_push</a> (struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *q, void *elem)</td></tr>
 <tr class="memdesc:aeee83de7c56e63e71ccae94f085e3dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds element elem to the priority queue.  <a href="#aeee83de7c56e63e71ccae94f085e3dad">More...</a><br /></td></tr>
 <tr class="separator:aeee83de7c56e63e71ccae94f085e3dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b66588b31eb32a0714058298aa6383"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority-queue_8h.html#a52b66588b31eb32a0714058298aa6383">cdc_priority_queue_pop</a> (struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *q)</td></tr>
-<tr class="memdesc:a52b66588b31eb32a0714058298aa6383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the top element.  <a href="#a52b66588b31eb32a0714058298aa6383">More...</a><br /></td></tr>
-<tr class="separator:a52b66588b31eb32a0714058298aa6383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547acf95d3c549fcb83e204e3dc4cac3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority-queue_8h.html#a547acf95d3c549fcb83e204e3dc4cac3">cdc_priority_queue_pop</a> (struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *q)</td></tr>
+<tr class="memdesc:a547acf95d3c549fcb83e204e3dc4cac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the top element.  <a href="#a547acf95d3c549fcb83e204e3dc4cac3">More...</a><br /></td></tr>
+<tr class="separator:a547acf95d3c549fcb83e204e3dc4cac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0a2413f77125039e8e52447856069f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="priority-queue_8h.html#a8b0a2413f77125039e8e52447856069f">cdc_priority_queue_swap</a> (struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *a, struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *b)</td></tr>
 <tr class="memdesc:a8b0a2413f77125039e8e52447856069f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps priority queues a and b. This operation is very fast and never fails.  <a href="#a8b0a2413f77125039e8e52447856069f">More...</a><br /></td></tr>
 <tr class="separator:a8b0a2413f77125039e8e52447856069f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,8 +335,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a52b66588b31eb32a0714058298aa6383"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52b66588b31eb32a0714058298aa6383">&#9670;&nbsp;</a></span>cdc_priority_queue_pop()</h2>
+<a id="a547acf95d3c549fcb83e204e3dc4cac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547acf95d3c549fcb83e204e3dc4cac3">&#9670;&nbsp;</a></span>cdc_priority_queue_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_priority_queue_pop </td>
+          <td class="memname">static void cdc_priority_queue_pop </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -366,7 +366,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
 
 </div>
 </div>

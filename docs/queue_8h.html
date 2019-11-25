@@ -119,9 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acbb648e905855d01a16ccd4ce3b1cc7e"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#acbb648e905855d01a16ccd4ce3b1cc7e">cdc_queue_push</a> (struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *q, void *elem)</td></tr>
 <tr class="memdesc:acbb648e905855d01a16ccd4ce3b1cc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds value elem to the tail of the queue.  <a href="#acbb648e905855d01a16ccd4ce3b1cc7e">More...</a><br /></td></tr>
 <tr class="separator:acbb648e905855d01a16ccd4ce3b1cc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b849d9dca2ffd8ead1c7ae4e69de1f0"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a7b849d9dca2ffd8ead1c7ae4e69de1f0">cdc_queue_pop</a> (struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *q)</td></tr>
-<tr class="memdesc:a7b849d9dca2ffd8ead1c7ae4e69de1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the head item in the queue. This function assumes that the queue isn't empty.  <a href="#a7b849d9dca2ffd8ead1c7ae4e69de1f0">More...</a><br /></td></tr>
-<tr class="separator:a7b849d9dca2ffd8ead1c7ae4e69de1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49f67d08b62a33146327577e2536cf5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aa49f67d08b62a33146327577e2536cf5">cdc_queue_pop</a> (struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *q)</td></tr>
+<tr class="memdesc:aa49f67d08b62a33146327577e2536cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the head item in the queue. This function assumes that the queue isn't empty.  <a href="#aa49f67d08b62a33146327577e2536cf5">More...</a><br /></td></tr>
+<tr class="separator:aa49f67d08b62a33146327577e2536cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a865b06b56cb34c6779ee95ee19a02f8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a865b06b56cb34c6779ee95ee19a02f8d">cdc_queue_swap</a> (struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *a, struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *b)</td></tr>
 <tr class="memdesc:a865b06b56cb34c6779ee95ee19a02f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps queues a and b. This operation is very fast and never fails.  <a href="#a865b06b56cb34c6779ee95ee19a02f8d">More...</a><br /></td></tr>
 <tr class="separator:a865b06b56cb34c6779ee95ee19a02f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,8 +408,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b849d9dca2ffd8ead1c7ae4e69de1f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b849d9dca2ffd8ead1c7ae4e69de1f0">&#9670;&nbsp;</a></span>cdc_queue_pop()</h2>
+<a id="aa49f67d08b62a33146327577e2536cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49f67d08b62a33146327577e2536cf5">&#9670;&nbsp;</a></span>cdc_queue_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +418,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_queue_pop </td>
+          <td class="memname">static void cdc_queue_pop </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -427,7 +427,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -439,7 +439,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
 
 </div>
 </div>
