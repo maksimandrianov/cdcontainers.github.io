@@ -129,9 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a00dba6828fc251bf8b2eefc07be312fa"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array_8h.html#a00dba6828fc251bf8b2eefc07be312fa">cdc_array_capacity</a> (struct <a class="el" href="structcdc__array.html">cdc_array</a> *v)</td></tr>
 <tr class="memdesc:a00dba6828fc251bf8b2eefc07be312fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of items that can be stored in the array without forcing a reallocation.  <a href="#a00dba6828fc251bf8b2eefc07be312fa">More...</a><br /></td></tr>
 <tr class="separator:a00dba6828fc251bf8b2eefc07be312fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cdafa1bdb562cbdf612f53290a963a6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array_8h.html#a4cdafa1bdb562cbdf612f53290a963a6">shrink_to_fit</a> (struct <a class="el" href="structcdc__array.html">cdc_array</a> *v)</td></tr>
-<tr class="memdesc:a4cdafa1bdb562cbdf612f53290a963a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the container to reduce its capacity to fit its size.  <a href="#a4cdafa1bdb562cbdf612f53290a963a6">More...</a><br /></td></tr>
-<tr class="separator:a4cdafa1bdb562cbdf612f53290a963a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79f6f3db76e1666a21b8af4a5df1ce2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array_8h.html#aa79f6f3db76e1666a21b8af4a5df1ce2">cdc_array_shrink_to_fit</a> (struct <a class="el" href="structcdc__array.html">cdc_array</a> *v)</td></tr>
+<tr class="memdesc:aa79f6f3db76e1666a21b8af4a5df1ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the container to reduce its capacity to fit its size.  <a href="#aa79f6f3db76e1666a21b8af4a5df1ce2">More...</a><br /></td></tr>
+<tr class="separator:aa79f6f3db76e1666a21b8af4a5df1ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d78794f80151d391843f8818275656"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="array_8h.html#ab0d78794f80151d391843f8818275656">cdc_array_set</a> (struct <a class="el" href="structcdc__array.html">cdc_array</a> *v, size_t index, void *value)</td></tr>
 <tr class="memdesc:ab0d78794f80151d391843f8818275656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the array at index position to the value. The function is not called to free memory.  <a href="#ab0d78794f80151d391843f8818275656">More...</a><br /></td></tr>
 <tr class="separator:ab0d78794f80151d391843f8818275656"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -418,7 +418,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -462,7 +462,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -506,7 +506,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -935,6 +935,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa79f6f3db76e1666a21b8af4a5df1ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79f6f3db76e1666a21b8af4a5df1ce2">&#9670;&nbsp;</a></span>cdc_array_shrink_to_fit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_shrink_to_fit </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests the container to reduce its capacity to fit its size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
+
+</div>
+</div>
 <a id="aaf614aa623fb4e42dee2142cbd1e5862"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf614aa623fb4e42dee2142cbd1e5862">&#9670;&nbsp;</a></span>cdc_array_size()</h2>
 
@@ -1004,33 +1031,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a4cdafa1bdb562cbdf612f53290a963a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cdafa1bdb562cbdf612f53290a963a6">&#9670;&nbsp;</a></span>shrink_to_fit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> shrink_to_fit </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Requests the container to reduce its capacity to fit its size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
 
 </div>
 </div>

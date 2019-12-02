@@ -123,6 +123,9 @@ $(function() {
 <li>cdc_array_set()
 : <a class="el" href="array_8h.html#ab0d78794f80151d391843f8818275656">array.h</a>
 </li>
+<li>cdc_array_shrink_to_fit()
+: <a class="el" href="array_8h.html#aa79f6f3db76e1666a21b8af4a5df1ce2">array.h</a>
+</li>
 <li>cdc_array_size()
 : <a class="el" href="array_8h.html#aaf614aa623fb4e42dee2142cbd1e5862">array.h</a>
 </li>
@@ -155,9 +158,6 @@ $(function() {
 </li>
 <li>cdc_avl_tree_end()
 : <a class="el" href="avl-tree_8h.html#af2e3ff5673a8df87ba2c8422f6f6155e">avl-tree.h</a>
-</li>
-<li>cdc_avl_tree_equal_range()
-: <a class="el" href="avl-tree_8h.html#ac9aea171a09b4e79afc9c3eaa361227c">avl-tree.h</a>
 </li>
 <li>cdc_avl_tree_erase()
 : <a class="el" href="avl-tree_8h.html#acf960281fd163cef219e76d43833b0d0">avl-tree.h</a>
@@ -286,7 +286,7 @@ $(function() {
 : <a class="el" href="deque_8h.html#a6892df0f3647aacfe1ecc2bfd77963ed">deque.h</a>
 </li>
 <li>cdc_deque_erase()
-: <a class="el" href="deque_8h.html#a692a16d03620b3eb97809c1e00b4520d">deque.h</a>
+: <a class="el" href="deque_8h.html#ae8b01a61f75a89f1f078625f80053539">deque.h</a>
 </li>
 <li>cdc_deque_front()
 : <a class="el" href="deque_8h.html#ae2837693e9b8aaa1b6cc5505a4ccf00b">deque.h</a>
@@ -298,19 +298,16 @@ $(function() {
 : <a class="el" href="deque_8h.html#a95189b49f2a7f9cd8199479591a6821f">deque.h</a>
 </li>
 <li>cdc_deque_pop_back()
-: <a class="el" href="deque_8h.html#a6dadf05030c943a0d8395e787e0e22c8">deque.h</a>
+: <a class="el" href="deque_8h.html#a2be62cc6d8b5134513ae70f5d58d32e8">deque.h</a>
 </li>
 <li>cdc_deque_pop_front()
-: <a class="el" href="deque_8h.html#ac851dcf9a2d39e19fb503a2cdb5d24e3">deque.h</a>
+: <a class="el" href="deque_8h.html#a83dc34be65980d392220c84031bd2713">deque.h</a>
 </li>
 <li>cdc_deque_push_back()
 : <a class="el" href="deque_8h.html#a280fbf021f872d9f2908ec3dd133d798">deque.h</a>
 </li>
 <li>cdc_deque_push_front()
 : <a class="el" href="deque_8h.html#aa37f619fa405ba0aea21d2acd5d4e837">deque.h</a>
-</li>
-<li>cdc_deque_remove()
-: <a class="el" href="deque_8h.html#a4937b5845d2c8cdb72688d1377bad7b2">deque.h</a>
 </li>
 <li>cdc_deque_set()
 : <a class="el" href="deque_8h.html#a125255e949ff95dedfdc230248b66c03">deque.h</a>
@@ -320,6 +317,21 @@ $(function() {
 </li>
 <li>cdc_deque_swap()
 : <a class="el" href="deque_8h.html#a0f05de1dcb5c4f96053db3b8b23b0b8e">deque.h</a>
+</li>
+<li>cdc_di_shared_ctorc()
+: <a class="el" href="data-info_8h.html#a00cbce396048b87ba4a12509ab4e115c">data-info.h</a>
+</li>
+<li>cdc_di_shared_dtor()
+: <a class="el" href="data-info_8h.html#a917c1f39c87e8f43471500700c28290c">data-info.h</a>
+</li>
+<li>cdc_eq()
+: <a class="el" href="data-info_8h.html#a4ee655238169dff93787c8abf9bd5db1">data-info.h</a>
+</li>
+<li>cdc_gt()
+: <a class="el" href="data-info_8h.html#a4dea01ea946a196c0c9b5e20c194e37f">data-info.h</a>
+</li>
+<li>cdc_gte()
+: <a class="el" href="data-info_8h.html#ae29ffd78d1aca3c463b3b5882a565b9c">data-info.h</a>
 </li>
 <li>cdc_hash_binary()
 : <a class="el" href="hash_8h.html#a4d50608659ddefb1cd78f0d4839244a4">hash.h</a>
@@ -340,31 +352,22 @@ $(function() {
 : <a class="el" href="hash-table_8h.html#ad49f0c243868121475b4809f6ce92371">hash-table.h</a>
 </li>
 <li>cdc_hash_table_ctor()
-: <a class="el" href="hash-table_8h.html#a83f8831986971e90d0faa7a1d52af722">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#a402a95693d9c6aa9d0ab180c21885beb">hash-table.h</a>
 </li>
 <li>cdc_hash_table_ctor1()
-: <a class="el" href="hash-table_8h.html#ad98e57a2ab845493a05c30011d8bc641">hash-table.h</a>
-</li>
-<li>cdc_hash_table_ctor2()
-: <a class="el" href="hash-table_8h.html#a8aa6b3f996d630aa2c68d39142ff9982">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#accf5b8472ff446a5e44a05446e761cf0">hash-table.h</a>
 </li>
 <li>cdc_hash_table_ctorl()
-: <a class="el" href="hash-table_8h.html#aeadd40e86168386f968ec413209cfc58">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#a3dac3f228f52d8509cbcabb63f133bc2">hash-table.h</a>
 </li>
 <li>cdc_hash_table_ctorl1()
-: <a class="el" href="hash-table_8h.html#a9f463a96d149a6d3808e8bb91f5b32b6">hash-table.h</a>
-</li>
-<li>cdc_hash_table_ctorl2()
-: <a class="el" href="hash-table_8h.html#a095485fe5ab8d899a6c67a4c9a62e648">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#a1dd917cb66d2dd1a1f3ec64c61588f4c">hash-table.h</a>
 </li>
 <li>cdc_hash_table_ctorv()
-: <a class="el" href="hash-table_8h.html#ae24cf724911b621ccb25af0d16db9ad0">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#ad938c0fcd1265cc717e82766a66ca797">hash-table.h</a>
 </li>
 <li>cdc_hash_table_ctorv1()
-: <a class="el" href="hash-table_8h.html#af231cf3d753f81ded512d0d34ff96b39">hash-table.h</a>
-</li>
-<li>cdc_hash_table_ctorv2()
-: <a class="el" href="hash-table_8h.html#ac560f04c403c8784baacb9f33fc7f32b">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#aec3b3ace39986b3f4a41aec3b366429f">hash-table.h</a>
 </li>
 <li>cdc_hash_table_dtor()
 : <a class="el" href="hash-table_8h.html#a7555abe97102c238be969198c90e1190">hash-table.h</a>
@@ -388,10 +391,10 @@ $(function() {
 : <a class="el" href="hash-table_8h.html#a45377b9140266a4dbe4814af8d10fc75">hash-table.h</a>
 </li>
 <li>cdc_hash_table_insert()
-: <a class="el" href="hash-table_8h.html#a2d135d90a62e6f0320d38486b2b9f40f">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#ae3b9a7104b5519924c5a82f883bbb721">hash-table.h</a>
 </li>
 <li>cdc_hash_table_insert_or_assign()
-: <a class="el" href="hash-table_8h.html#acac77352a1353431c941e9c2e571e5c0">hash-table.h</a>
+: <a class="el" href="hash-table_8h.html#a24336090fd9ffe1ec6b6700cc079f458">hash-table.h</a>
 </li>
 <li>cdc_hash_table_iter_has_next()
 : <a class="el" href="hash-table_8h.html#a105c06bb6b09d474d54a8adac7f0ce20">hash-table.h</a>
@@ -642,6 +645,9 @@ $(function() {
 <li>cdc_list_unique()
 : <a class="el" href="list_8h.html#abdfaf52e2a6655469261ce0265553797">list.h</a>
 </li>
+<li>cdc_lte()
+: <a class="el" href="data-info_8h.html#a92b541388ce937222431e12258fc31d9">data-info.h</a>
+</li>
 <li>cdc_map_begin()
 : <a class="el" href="map_8h.html#affc94510ff269f4a2ed97bf5127c533f">map.h</a>
 </li>
@@ -684,17 +690,17 @@ $(function() {
 <li>cdc_map_insert_or_assign()
 : <a class="el" href="map_8h.html#aaf5d3a55ed24ea106eb6e9961a8f4866">map.h</a>
 </li>
-<li>cdc_map_iter_free()
-: <a class="el" href="map_8h.html#a8e3858d4efb094f32f892467bc1ecb9a">map.h</a>
+<li>cdc_map_iter_ctor()
+: <a class="el" href="map_8h.html#abd84e3096f7fde5d162ecbc02e651ae3">map.h</a>
+</li>
+<li>cdc_map_iter_dtor()
+: <a class="el" href="map_8h.html#a9f3c839beaa387d9e472592df2e8b219">map.h</a>
 </li>
 <li>cdc_map_iter_has_next()
 : <a class="el" href="map_8h.html#a62da47496b1dafec71a18554ffafcd1f">map.h</a>
 </li>
 <li>cdc_map_iter_has_prev()
 : <a class="el" href="map_8h.html#a1c120993e7f657678d8e22f6aa7597a9">map.h</a>
-</li>
-<li>cdc_map_iter_init()
-: <a class="el" href="map_8h.html#adc5fa2e16b9181f96845e5cdf7236d1f">map.h</a>
 </li>
 <li>cdc_map_iter_is_eq()
 : <a class="el" href="map_8h.html#af37eb16ae747dded95b3ac8a089060ad">map.h</a>
@@ -711,6 +717,9 @@ $(function() {
 <li>cdc_map_iter_prev()
 : <a class="el" href="map_8h.html#aff33154351d4c4c5305d3bb1dcf8c813">map.h</a>
 </li>
+<li>cdc_map_iter_type()
+: <a class="el" href="map_8h.html#a536cff87cc2ea776b198f233b2fb4349">map.h</a>
+</li>
 <li>cdc_map_iter_value()
 : <a class="el" href="map_8h.html#abc948dbc286c2021fa63d828d34e3d7a">map.h</a>
 </li>
@@ -719,6 +728,9 @@ $(function() {
 </li>
 <li>cdc_map_swap()
 : <a class="el" href="map_8h.html#ab6256ae99217fb2f31d8b81bfc4b1e6a">map.h</a>
+</li>
+<li>cdc_not_eq()
+: <a class="el" href="data-info_8h.html#a2b29f7c8abc5f3f580c2120f6e19c434">data-info.h</a>
 </li>
 <li>cdc_pairing_heap_change_key()
 : <a class="el" href="pairing-heap_8h.html#ad8473935f4bf9dbefc7673fd0e1011c4">pairing-heap.h</a>

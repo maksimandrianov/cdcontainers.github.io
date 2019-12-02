@@ -121,9 +121,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa332ff61ccdcb60cc2839e5c08208437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avl-tree_8h.html#aa332ff61ccdcb60cc2839e5c08208437">cdc_avl_tree_find</a> (struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *t, void *key, struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *it)</td></tr>
 <tr class="memdesc:aa332ff61ccdcb60cc2839e5c08208437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an element with key equivalent to key.  <a href="#aa332ff61ccdcb60cc2839e5c08208437">More...</a><br /></td></tr>
 <tr class="separator:aa332ff61ccdcb60cc2839e5c08208437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9aea171a09b4e79afc9c3eaa361227c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avl-tree_8h.html#ac9aea171a09b4e79afc9c3eaa361227c">cdc_avl_tree_equal_range</a> (struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *t, void *key, struct <a class="el" href="structcdc__pair__avl__tree__iter.html">cdc_pair_avl_tree_iter</a> *pair)</td></tr>
-<tr class="memdesc:ac9aea171a09b4e79afc9c3eaa361227c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a range containing all elements with key key in the container. The range is defined by two iterators, the first pointing to the first element of the wanted range and the second pointing past the last element of the range.  <a href="#ac9aea171a09b4e79afc9c3eaa361227c">More...</a><br /></td></tr>
-<tr class="separator:ac9aea171a09b4e79afc9c3eaa361227c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2953535f1a4876e8ba91f6001cb0bf3e"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avl-tree_8h.html#a2953535f1a4876e8ba91f6001cb0bf3e">cdc_avl_tree_size</a> (struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *t)</td></tr>
 <tr class="memdesc:a2953535f1a4876e8ba91f6001cb0bf3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of items in the avl_tree.  <a href="#a2953535f1a4876e8ba91f6001cb0bf3e">More...</a><br /></td></tr>
 <tr class="separator:a2953535f1a4876e8ba91f6001cb0bf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,7 +314,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -361,7 +358,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -405,7 +402,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -505,50 +502,6 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree struct. ">cdc_avl_tree</a> </td></tr>
     <tr><td class="paramname">it</td><td>- <a class="el" href="structcdc__avl__tree__iter.html" title="The cdc_avl_tree_iter struct. ">cdc_avl_tree_iter</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac9aea171a09b4e79afc9c3eaa361227c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9aea171a09b4e79afc9c3eaa361227c">&#9670;&nbsp;</a></span>cdc_avl_tree_equal_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_avl_tree_equal_range </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pair__avl__tree__iter.html">cdc_pair_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>pair</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a range containing all elements with key key in the container. The range is defined by two iterators, the first pointing to the first element of the wanted range and the second pointing past the last element of the range. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key value to compare the elements to </td></tr>
-    <tr><td class="paramname">pair</td><td>- pointer will be recorded a pair of iterators defining the wanted range. If there are no such elements, past-the-end iterators are returned as both elements of the pair. </td></tr>
   </table>
   </dd>
 </dl>

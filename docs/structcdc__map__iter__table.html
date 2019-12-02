@@ -74,10 +74,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a33b58f001ef7a1a5fc16171232944e91"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#a33b58f001ef7a1a5fc16171232944e91">alloc</a> )()</td></tr>
-<tr class="separator:a33b58f001ef7a1a5fc16171232944e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a822924898ad694d8a98c491ab3a344"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#a6a822924898ad694d8a98c491ab3a344">free</a> )(void *it)</td></tr>
-<tr class="separator:a6a822924898ad694d8a98c491ab3a344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56e780c889be1d271066df3e9c0764d"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#ac56e780c889be1d271066df3e9c0764d">ctor</a> )()</td></tr>
+<tr class="separator:ac56e780c889be1d271066df3e9c0764d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7158d41e0f47e9ec3199307428bd0f5"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#ac7158d41e0f47e9ec3199307428bd0f5">dtor</a> )(void *it)</td></tr>
+<tr class="separator:ac7158d41e0f47e9ec3199307428bd0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93744e38be7a7696b1a1ade093f67ebf"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="common_8h.html#adcb790e3ce8d0eaee65a6614f23f1c39">cdc_iterator_type</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#a93744e38be7a7696b1a1ade093f67ebf">type</a> )()</td></tr>
+<tr class="separator:a93744e38be7a7696b1a1ade093f67ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af52424bf45d768820bbfe0b2fd3a2c7a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#af52424bf45d768820bbfe0b2fd3a2c7a">next</a> )(void *it)</td></tr>
 <tr class="separator:af52424bf45d768820bbfe0b2fd3a2c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af10a50f210af1a284e71499608872888"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__map__iter__table.html#af10a50f210af1a284e71499608872888">prev</a> )(void *it)</td></tr>
@@ -99,14 +101,28 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__map__iter__table.html" title="The cdc_map_iter_table struct. ">cdc_map_iter_table</a> struct. </p>
 <dl class="section warning"><dt>Warning</dt><dd>To avoid problems, do not change the structure fields in the code. Use only special functions to access and change structure fields. </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a33b58f001ef7a1a5fc16171232944e91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33b58f001ef7a1a5fc16171232944e91">&#9670;&nbsp;</a></span>alloc</h2>
+<a id="ac56e780c889be1d271066df3e9c0764d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac56e780c889be1d271066df3e9c0764d">&#9670;&nbsp;</a></span>ctor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void*(* alloc) ()</td>
+          <td class="memname">void*(* ctor) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7158d41e0f47e9ec3199307428bd0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7158d41e0f47e9ec3199307428bd0f5">&#9670;&nbsp;</a></span>dtor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* dtor) (void *it)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -121,20 +137,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool(* eq) (void *it1, void *it2)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a822924898ad694d8a98c491ab3a344"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a822924898ad694d8a98c491ab3a344">&#9670;&nbsp;</a></span>free</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* free) (void *it)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,6 +221,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* prev) (void *it)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93744e38be7a7696b1a1ade093f67ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93744e38be7a7696b1a1ade093f67ebf">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="common_8h.html#adcb790e3ce8d0eaee65a6614f23f1c39">cdc_iterator_type</a>(* type) ()</td>
         </tr>
       </table>
 </div><div class="memdoc">

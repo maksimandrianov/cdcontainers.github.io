@@ -97,38 +97,27 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__pair__hash__table__iter.html">cdc_pair_hash_table_iter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__pair__hash__table__iter__bool.html">cdc_pair_hash_table_iter_bool</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a83f8831986971e90d0faa7a1d52af722"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a83f8831986971e90d0faa7a1d52af722">cdc_hash_table_ctor</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash)</td></tr>
-<tr class="memdesc:a83f8831986971e90d0faa7a1d52af722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty hash table.  <a href="#a83f8831986971e90d0faa7a1d52af722">More...</a><br /></td></tr>
-<tr class="separator:a83f8831986971e90d0faa7a1d52af722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeadd40e86168386f968ec413209cfc58"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#aeadd40e86168386f968ec413209cfc58">cdc_hash_table_ctorl</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash,...)</td></tr>
-<tr class="memdesc:aeadd40e86168386f968ec413209cfc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#aeadd40e86168386f968ec413209cfc58">More...</a><br /></td></tr>
-<tr class="separator:aeadd40e86168386f968ec413209cfc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae24cf724911b621ccb25af0d16db9ad0"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#ae24cf724911b621ccb25af0d16db9ad0">cdc_hash_table_ctorv</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, va_list args)</td></tr>
-<tr class="memdesc:ae24cf724911b621ccb25af0d16db9ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by args. The last item must be NULL.  <a href="#ae24cf724911b621ccb25af0d16db9ad0">More...</a><br /></td></tr>
-<tr class="separator:ae24cf724911b621ccb25af0d16db9ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad98e57a2ab845493a05c30011d8bc641"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#ad98e57a2ab845493a05c30011d8bc641">cdc_hash_table_ctor1</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, <a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a> equal)</td></tr>
-<tr class="memdesc:ad98e57a2ab845493a05c30011d8bc641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty hash table.  <a href="#ad98e57a2ab845493a05c30011d8bc641">More...</a><br /></td></tr>
-<tr class="separator:ad98e57a2ab845493a05c30011d8bc641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f463a96d149a6d3808e8bb91f5b32b6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a9f463a96d149a6d3808e8bb91f5b32b6">cdc_hash_table_ctorl1</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, <a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a> equal,...)</td></tr>
-<tr class="memdesc:a9f463a96d149a6d3808e8bb91f5b32b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#a9f463a96d149a6d3808e8bb91f5b32b6">More...</a><br /></td></tr>
-<tr class="separator:a9f463a96d149a6d3808e8bb91f5b32b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af231cf3d753f81ded512d0d34ff96b39"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#af231cf3d753f81ded512d0d34ff96b39">cdc_hash_table_ctorv1</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, <a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a> equal, va_list args)</td></tr>
-<tr class="memdesc:af231cf3d753f81ded512d0d34ff96b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by args. The last item must be NULL.  <a href="#af231cf3d753f81ded512d0d34ff96b39">More...</a><br /></td></tr>
-<tr class="separator:af231cf3d753f81ded512d0d34ff96b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa6b3f996d630aa2c68d39142ff9982"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a8aa6b3f996d630aa2c68d39142ff9982">cdc_hash_table_ctor2</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, <a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a> equal, float load_factor)</td></tr>
-<tr class="memdesc:a8aa6b3f996d630aa2c68d39142ff9982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty hash table.  <a href="#a8aa6b3f996d630aa2c68d39142ff9982">More...</a><br /></td></tr>
-<tr class="separator:a8aa6b3f996d630aa2c68d39142ff9982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095485fe5ab8d899a6c67a4c9a62e648"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a095485fe5ab8d899a6c67a4c9a62e648">cdc_hash_table_ctorl2</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, <a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a> equal, float load_factor,...)</td></tr>
-<tr class="memdesc:a095485fe5ab8d899a6c67a4c9a62e648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#a095485fe5ab8d899a6c67a4c9a62e648">More...</a><br /></td></tr>
-<tr class="separator:a095485fe5ab8d899a6c67a4c9a62e648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac560f04c403c8784baacb9f33fc7f32b"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#ac560f04c403c8784baacb9f33fc7f32b">cdc_hash_table_ctorv2</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a> hash, <a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a> equal, float load_factor, va_list args)</td></tr>
-<tr class="memdesc:ac560f04c403c8784baacb9f33fc7f32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by args. The last item must be NULL.  <a href="#ac560f04c403c8784baacb9f33fc7f32b">More...</a><br /></td></tr>
-<tr class="separator:ac560f04c403c8784baacb9f33fc7f32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402a95693d9c6aa9d0ab180c21885beb"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a402a95693d9c6aa9d0ab180c21885beb">cdc_hash_table_ctor</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info)</td></tr>
+<tr class="memdesc:a402a95693d9c6aa9d0ab180c21885beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty hash table.  <a href="#a402a95693d9c6aa9d0ab180c21885beb">More...</a><br /></td></tr>
+<tr class="separator:a402a95693d9c6aa9d0ab180c21885beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dac3f228f52d8509cbcabb63f133bc2"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a3dac3f228f52d8509cbcabb63f133bc2">cdc_hash_table_ctorl</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info,...)</td></tr>
+<tr class="memdesc:a3dac3f228f52d8509cbcabb63f133bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#a3dac3f228f52d8509cbcabb63f133bc2">More...</a><br /></td></tr>
+<tr class="separator:a3dac3f228f52d8509cbcabb63f133bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad938c0fcd1265cc717e82766a66ca797"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#ad938c0fcd1265cc717e82766a66ca797">cdc_hash_table_ctorv</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, va_list args)</td></tr>
+<tr class="memdesc:ad938c0fcd1265cc717e82766a66ca797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by args. The last item must be NULL.  <a href="#ad938c0fcd1265cc717e82766a66ca797">More...</a><br /></td></tr>
+<tr class="separator:ad938c0fcd1265cc717e82766a66ca797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf5b8472ff446a5e44a05446e761cf0"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#accf5b8472ff446a5e44a05446e761cf0">cdc_hash_table_ctor1</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, float load_factor)</td></tr>
+<tr class="memdesc:accf5b8472ff446a5e44a05446e761cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty hash table.  <a href="#accf5b8472ff446a5e44a05446e761cf0">More...</a><br /></td></tr>
+<tr class="separator:accf5b8472ff446a5e44a05446e761cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd917cb66d2dd1a1f3ec64c61588f4c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a1dd917cb66d2dd1a1f3ec64c61588f4c">cdc_hash_table_ctorl1</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, float load_factor,...)</td></tr>
+<tr class="memdesc:a1dd917cb66d2dd1a1f3ec64c61588f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#a1dd917cb66d2dd1a1f3ec64c61588f4c">More...</a><br /></td></tr>
+<tr class="separator:a1dd917cb66d2dd1a1f3ec64c61588f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3b3ace39986b3f4a41aec3b366429f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#aec3b3ace39986b3f4a41aec3b366429f">cdc_hash_table_ctorv1</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, float load_factor, va_list args)</td></tr>
+<tr class="memdesc:aec3b3ace39986b3f4a41aec3b366429f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a hash table, initialized by args. The last item must be NULL.  <a href="#aec3b3ace39986b3f4a41aec3b366429f">More...</a><br /></td></tr>
+<tr class="separator:aec3b3ace39986b3f4a41aec3b366429f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7555abe97102c238be969198c90e1190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a7555abe97102c238be969198c90e1190">cdc_hash_table_dtor</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t)</td></tr>
 <tr class="memdesc:a7555abe97102c238be969198c90e1190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the hash table.  <a href="#a7555abe97102c238be969198c90e1190">More...</a><br /></td></tr>
 <tr class="separator:a7555abe97102c238be969198c90e1190"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,12 +142,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adb6b4c091720db81a80932ffc0479d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#adb6b4c091720db81a80932ffc0479d34">cdc_hash_table_clear</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t)</td></tr>
 <tr class="memdesc:adb6b4c091720db81a80932ffc0479d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the elements from the hash table.  <a href="#adb6b4c091720db81a80932ffc0479d34">More...</a><br /></td></tr>
 <tr class="separator:adb6b4c091720db81a80932ffc0479d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d135d90a62e6f0320d38486b2b9f40f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a2d135d90a62e6f0320d38486b2b9f40f">cdc_hash_table_insert</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t, void *key, void *value, struct <a class="el" href="structcdc__pair__hash__table__iter__bool.html">cdc_pair_hash_table_iter_bool</a> *ret)</td></tr>
-<tr class="memdesc:a2d135d90a62e6f0320d38486b2b9f40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts element into the container, if the container doesn't already contain an element with an equivalent key.  <a href="#a2d135d90a62e6f0320d38486b2b9f40f">More...</a><br /></td></tr>
-<tr class="separator:a2d135d90a62e6f0320d38486b2b9f40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac77352a1353431c941e9c2e571e5c0"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#acac77352a1353431c941e9c2e571e5c0">cdc_hash_table_insert_or_assign</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t, void *key, void *value, struct <a class="el" href="structcdc__pair__hash__table__iter__bool.html">cdc_pair_hash_table_iter_bool</a> *ret)</td></tr>
-<tr class="memdesc:acac77352a1353431c941e9c2e571e5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an element or assigns to the current element if the key already exists.  <a href="#acac77352a1353431c941e9c2e571e5c0">More...</a><br /></td></tr>
-<tr class="separator:acac77352a1353431c941e9c2e571e5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b9a7104b5519924c5a82f883bbb721"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#ae3b9a7104b5519924c5a82f883bbb721">cdc_hash_table_insert</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t, void *key, void *value, struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *it, bool *inserted)</td></tr>
+<tr class="memdesc:ae3b9a7104b5519924c5a82f883bbb721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts element into the container, if the container doesn't already contain an element with an equivalent key.  <a href="#ae3b9a7104b5519924c5a82f883bbb721">More...</a><br /></td></tr>
+<tr class="separator:ae3b9a7104b5519924c5a82f883bbb721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24336090fd9ffe1ec6b6700cc079f458"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a24336090fd9ffe1ec6b6700cc079f458">cdc_hash_table_insert_or_assign</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t, void *key, void *value, struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *it, bool *inserted)</td></tr>
+<tr class="memdesc:a24336090fd9ffe1ec6b6700cc079f458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an element or assigns to the current element if the key already exists.  <a href="#a24336090fd9ffe1ec6b6700cc079f458">More...</a><br /></td></tr>
+<tr class="separator:a24336090fd9ffe1ec6b6700cc079f458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f801a3073436232ed0c53a8d02bab86"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash-table_8h.html#a0f801a3073436232ed0c53a8d02bab86">cdc_hash_table_erase</a> (struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *t, void *key)</td></tr>
 <tr class="memdesc:a0f801a3073436232ed0c53a8d02bab86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element (if one exists) with the key equivalent to key.  <a href="#a0f801a3073436232ed0c53a8d02bab86">More...</a><br /></td></tr>
 <tr class="separator:a0f801a3073436232ed0c53a8d02bab86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,8 +345,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83f8831986971e90d0faa7a1d52af722"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f8831986971e90d0faa7a1d52af722">&#9670;&nbsp;</a></span>cdc_hash_table_ctor()</h2>
+<a id="a402a95693d9c6aa9d0ab180c21885beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402a95693d9c6aa9d0ab180c21885beb">&#9670;&nbsp;</a></span>cdc_hash_table_ctor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,13 +361,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -392,8 +375,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -401,8 +383,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad98e57a2ab845493a05c30011d8bc641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad98e57a2ab845493a05c30011d8bc641">&#9670;&nbsp;</a></span>cdc_hash_table_ctor1()</h2>
+<a id="accf5b8472ff446a5e44a05446e761cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf5b8472ff446a5e44a05446e761cf0">&#9670;&nbsp;</a></span>cdc_hash_table_ctor1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,70 +404,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>equal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs an empty hash table. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
-    <tr><td class="paramname">equal</td><td>- comparison function to use for all key comparisons of this container </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
-
-</div>
-</div>
-<a id="a8aa6b3f996d630aa2c68d39142ff9982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aa6b3f996d630aa2c68d39142ff9982">&#9670;&nbsp;</a></span>cdc_hash_table_ctor2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctor2 </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>equal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>load_factor</em>&#160;</td>
         </tr>
@@ -501,9 +419,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
-    <tr><td class="paramname">equal</td><td>- comparison function to use for all key comparisons of this container </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
     <tr><td class="paramname">load_factor</td><td>- maximum load factor setting </td></tr>
   </table>
   </dd>
@@ -512,8 +428,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeadd40e86168386f968ec413209cfc58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeadd40e86168386f968ec413209cfc58">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl()</h2>
+<a id="a3dac3f228f52d8509cbcabb63f133bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dac3f228f52d8509cbcabb63f133bc2">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,12 +449,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em>&#160;</td>
         </tr>
@@ -554,8 +464,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -563,8 +472,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f463a96d149a6d3808e8bb91f5b32b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f463a96d149a6d3808e8bb91f5b32b6">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl1()</h2>
+<a id="a1dd917cb66d2dd1a1f3ec64c61588f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd917cb66d2dd1a1f3ec64c61588f4c">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,76 +493,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>equal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs a hash table, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
-    <tr><td class="paramname">equal</td><td>- comparison function to use for all key comparisons of this container </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
-
-</div>
-</div>
-<a id="a095485fe5ab8d899a6c67a4c9a62e648"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a095485fe5ab8d899a6c67a4c9a62e648">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctorl2 </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>equal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>load_factor</em>, </td>
         </tr>
@@ -675,9 +514,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
-    <tr><td class="paramname">equal</td><td>- comparison function to use for all key comparisons of this container </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
     <tr><td class="paramname">load_factor</td><td>- maximum load factor setting </td></tr>
   </table>
   </dd>
@@ -686,8 +523,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae24cf724911b621ccb25af0d16db9ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae24cf724911b621ccb25af0d16db9ad0">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv()</h2>
+<a id="ad938c0fcd1265cc717e82766a66ca797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad938c0fcd1265cc717e82766a66ca797">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,12 +544,6 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">va_list&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
@@ -728,8 +559,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -737,8 +567,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af231cf3d753f81ded512d0d34ff96b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af231cf3d753f81ded512d0d34ff96b39">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv1()</h2>
+<a id="aec3b3ace39986b3f4a41aec3b366429f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3b3ace39986b3f4a41aec3b366429f">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -754,76 +584,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
           <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>equal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs a hash table, initialized by args. The last item must be NULL. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
-    <tr><td class="paramname">equal</td><td>- comparison function to use for all key comparisons of this container </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or an excellent value indicating an error </dd></dl>
-
-</div>
-</div>
-<a id="ac560f04c403c8784baacb9f33fc7f32b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac560f04c403c8784baacb9f33fc7f32b">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctorv2 </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hash_8h.html#aba12d5cdfee79cb08105d089b5b855ba">cdc_hash_fn_t</a>&#160;</td>
-          <td class="paramname"><em>hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>equal</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -849,9 +609,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">hash</td><td>- hash function to use </td></tr>
-    <tr><td class="paramname">equal</td><td>- comparison function to use for all key comparisons of this container </td></tr>
+    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
     <tr><td class="paramname">load_factor</td><td>- maximum load factor setting </td></tr>
   </table>
   </dd>
@@ -1137,8 +895,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d135d90a62e6f0320d38486b2b9f40f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d135d90a62e6f0320d38486b2b9f40f">&#9670;&nbsp;</a></span>cdc_hash_table_insert()</h2>
+<a id="ae3b9a7104b5519924c5a82f883bbb721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b9a7104b5519924c5a82f883bbb721">&#9670;&nbsp;</a></span>cdc_hash_table_insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1164,8 +922,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pair__hash__table__iter__bool.html">cdc_pair_hash_table_iter_bool</a> *&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>inserted</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1181,7 +945,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
     <tr><td class="paramname">key</td><td>- key of the element </td></tr>
     <tr><td class="paramname">value</td><td>- value of the element </td></tr>
-    <tr><td class="paramname">ret</td><td>- pair consisting of an iterator to the inserted element (or to the element that prevented the insertion) and a bool denoting whether the insertion took place. The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramname">it</td><td>- iterator to the inserted element (or to the element that prevented the insertion). The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramname">inserted</td><td>- bool denoting whether the insertion </td></tr>
   </table>
   </dd>
 </dl>
@@ -1189,8 +954,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acac77352a1353431c941e9c2e571e5c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac77352a1353431c941e9c2e571e5c0">&#9670;&nbsp;</a></span>cdc_hash_table_insert_or_assign()</h2>
+<a id="a24336090fd9ffe1ec6b6700cc079f458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24336090fd9ffe1ec6b6700cc079f458">&#9670;&nbsp;</a></span>cdc_hash_table_insert_or_assign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1216,8 +981,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pair__hash__table__iter__bool.html">cdc_pair_hash_table_iter_bool</a> *&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>inserted</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1233,7 +1004,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table struct. ">cdc_hash_table</a> </td></tr>
     <tr><td class="paramname">key</td><td>- key of the element </td></tr>
     <tr><td class="paramname">value</td><td>- value of the element </td></tr>
-    <tr><td class="paramname">ret</td><td>- pair. The bool component is true if the insertion took place and false if the assignment took place. The iterator component is pointing at the element that was inserted or updated </td></tr>
+    <tr><td class="paramname">it</td><td>- iterator to the inserted element (or to the element that prevented the insertion). The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramname">inserted</td><td>- bool denoting whether the insertion </td></tr>
   </table>
   </dd>
 </dl>
