@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cdcontainers: cdc_array Struct Reference</title>
+<title>cdcontainers: cdc_circular_array Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,28 +63,32 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">cdc_array Struct Reference</div>  </div>
+<div class="title">cdc_circular_array Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> is service struct.  
- <a href="structcdc__array.html#details">More...</a></p>
+<p>The <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array struct. ">cdc_circular_array</a> struct.  
+ <a href="structcdc__circular__array.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="array_8h_source.html">array.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="circular-array_8h_source.html">circular-array.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__array.html#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
-<tr class="separator:a854352f53b148adc24983a58a1866d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad721fc6ca6a3d6ba3bc506576622aab0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__array.html#ad721fc6ca6a3d6ba3bc506576622aab0">capacity</a></td></tr>
-<tr class="separator:ad721fc6ca6a3d6ba3bc506576622aab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35d30b657817ecdcb47609da9ce1e0dc"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__array.html#a35d30b657817ecdcb47609da9ce1e0dc">buffer</a></td></tr>
+<tr class="memitem:a35d30b657817ecdcb47609da9ce1e0dc"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__circular__array.html#a35d30b657817ecdcb47609da9ce1e0dc">buffer</a></td></tr>
 <tr class="separator:a35d30b657817ecdcb47609da9ce1e0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1700925a54ebcb4cada3e4654e4afeea"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__array.html#a1700925a54ebcb4cada3e4654e4afeea">dinfo</a></td></tr>
+<tr class="memitem:a75844ce74940ef333d11ae090e07c9af"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__circular__array.html#a75844ce74940ef333d11ae090e07c9af">head</a></td></tr>
+<tr class="separator:a75844ce74940ef333d11ae090e07c9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71c3da585299fa719501f5149814fd7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__circular__array.html#ad71c3da585299fa719501f5149814fd7">tail</a></td></tr>
+<tr class="separator:ad71c3da585299fa719501f5149814fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__circular__array.html#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
+<tr class="separator:a854352f53b148adc24983a58a1866d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad721fc6ca6a3d6ba3bc506576622aab0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__circular__array.html#ad721fc6ca6a3d6ba3bc506576622aab0">capacity</a></td></tr>
+<tr class="separator:ad721fc6ca6a3d6ba3bc506576622aab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1700925a54ebcb4cada3e4654e4afeea"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__circular__array.html#a1700925a54ebcb4cada3e4654e4afeea">dinfo</a></td></tr>
 <tr class="separator:a1700925a54ebcb4cada3e4654e4afeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> is service struct. </p>
+<div class="textblock"><p>The <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array struct. ">cdc_circular_array</a> struct. </p>
 <dl class="section warning"><dt>Warning</dt><dd>To avoid problems, do not change the structure fields in the code. Use only special functions to access and change structure fields. </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a35d30b657817ecdcb47609da9ce1e0dc"></a>
@@ -129,6 +133,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a75844ce74940ef333d11ae090e07c9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75844ce74940ef333d11ae090e07c9af">&#9670;&nbsp;</a></span>head</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a854352f53b148adc24983a58a1866d66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a854352f53b148adc24983a58a1866d66">&#9670;&nbsp;</a></span>size</h2>
 
@@ -143,8 +161,22 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ad71c3da585299fa719501f5149814fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71c3da585299fa719501f5149814fd7">&#9670;&nbsp;</a></span>tail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t tail</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="array_8h_source.html">array.h</a></li>
+<li><a class="el" href="circular-array_8h_source.html">circular-array.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
