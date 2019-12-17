@@ -93,8 +93,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__splay__tree__iter.html" title="The cdc_splay_tree_iter is service struct. ">cdc_splay_tree_iter</a> is service struct.  <a href="structcdc__splay__tree__iter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__pair__splay__tree__iter.html">cdc_pair_splay_tree_iter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__pair__splay__tree__iter__bool.html">cdc_pair_splay_tree_iter_bool</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -121,9 +119,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a96876282fcea2c234bd2213eb0de118b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="splay-tree_8h.html#a96876282fcea2c234bd2213eb0de118b">cdc_splay_tree_find</a> (struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *t, void *key, struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *it)</td></tr>
 <tr class="memdesc:a96876282fcea2c234bd2213eb0de118b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an element with key equivalent to key.  <a href="#a96876282fcea2c234bd2213eb0de118b">More...</a><br /></td></tr>
 <tr class="separator:a96876282fcea2c234bd2213eb0de118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6893e7688e5c63d48620ae22f330c60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="splay-tree_8h.html#aa6893e7688e5c63d48620ae22f330c60">cdc_splay_tree_equal_range</a> (struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *t, void *key, struct <a class="el" href="structcdc__pair__splay__tree__iter.html">cdc_pair_splay_tree_iter</a> *pair)</td></tr>
-<tr class="memdesc:aa6893e7688e5c63d48620ae22f330c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a range containing all elements with key key in the container. The range is defined by two iterators, the first pointing to the first element of the wanted range and the second pointing past the last element of the range.  <a href="#aa6893e7688e5c63d48620ae22f330c60">More...</a><br /></td></tr>
-<tr class="separator:aa6893e7688e5c63d48620ae22f330c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5bb43ff49720dc23451738381d0c8bc"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="splay-tree_8h.html#ae5bb43ff49720dc23451738381d0c8bc">cdc_splay_tree_size</a> (struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *t)</td></tr>
 <tr class="memdesc:ae5bb43ff49720dc23451738381d0c8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of items in the splay_tree.  <a href="#ae5bb43ff49720dc23451738381d0c8bc">More...</a><br /></td></tr>
 <tr class="separator:ae5bb43ff49720dc23451738381d0c8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -511,50 +506,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa6893e7688e5c63d48620ae22f330c60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6893e7688e5c63d48620ae22f330c60">&#9670;&nbsp;</a></span>cdc_splay_tree_equal_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_splay_tree_equal_range </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pair__splay__tree__iter.html">cdc_pair_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>pair</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns a range containing all elements with key key in the container. The range is defined by two iterators, the first pointing to the first element of the wanted range and the second pointing past the last element of the range. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value to compare the elements to </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pair</td><td>- pointer will be recorded a pair of iterators defining the wanted range. If there are no such elements, past-the-end iterators are returned as both elements of the pair. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a247b5241f237f76565682d060fd37081"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a247b5241f237f76565682d060fd37081">&#9670;&nbsp;</a></span>cdc_splay_tree_erase()</h2>
 
@@ -781,7 +732,7 @@ Functions</h2></td></tr>
 <p>Inserts an element into the container, if the container doesn't already contain an element with an equivalent key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__map.html" title="The cdc_map struct. ">cdc_map</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value of the element </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- iterator to the inserted element (or to the element that prevented the insertion). The pointer can be equal to NULL. </td></tr>
@@ -892,7 +843,7 @@ Functions</h2></td></tr>
 <p>Inserts an element or assigns to the current element if the key already exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__map.html" title="The cdc_map struct. ">cdc_map</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value of the element </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- iterator is pointing at the element that was inserted or updated. The pointer can be equal to NULL </td></tr>
