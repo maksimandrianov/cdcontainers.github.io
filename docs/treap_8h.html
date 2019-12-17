@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> is a struct and functions that provide a cartesion tree.  
+<p>The <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> is a struct and functions that provide a cartesion tree.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="common_8h_source.html">cdcontainers/common.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="status_8h_source.html">cdcontainers/status.h</a>&gt;</code><br />
@@ -86,13 +86,13 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__treap__node.html">cdc_treap_node</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__treap__node.html" title="The cdc_treap_node struct. ">cdc_treap_node</a> struct.  <a href="structcdc__treap__node.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__treap__node.html" title="The cdc_treap_node is service struct. ">cdc_treap_node</a> is service struct.  <a href="structcdc__treap__node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__treap.html">cdc_treap</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> struct.  <a href="structcdc__treap.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> is service struct.  <a href="structcdc__treap.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__treap__iter.html" title="The cdc_treap_iter struct. ">cdc_treap_iter</a> struct.  <a href="structcdc__treap__iter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structcdc__treap__iter.html" title="The cdc_treap_iter is service struct. ">cdc_treap_iter</a> is service struct.  <a href="structcdc__treap__iter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcdc__pair__treap__iter.html">cdc_pair_treap_iter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,25 +110,25 @@ Functions</h2></td></tr>
 <tr class="memdesc:a30fb83d753d41bbe49eab89e93424b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty treap.  <a href="#a30fb83d753d41bbe49eab89e93424b13">More...</a><br /></td></tr>
 <tr class="separator:a30fb83d753d41bbe49eab89e93424b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4836d47c85768f192e63f7282f0735"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a6d4836d47c85768f192e63f7282f0735">cdc_treap_ctorl</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info,...)</td></tr>
-<tr class="memdesc:a6d4836d47c85768f192e63f7282f0735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#a6d4836d47c85768f192e63f7282f0735">More...</a><br /></td></tr>
+<tr class="memdesc:a6d4836d47c85768f192e63f7282f0735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by an variable number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be CDC_END.  <a href="#a6d4836d47c85768f192e63f7282f0735">More...</a><br /></td></tr>
 <tr class="separator:a6d4836d47c85768f192e63f7282f0735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9fddae8502914b9eab39b672ba7d9c1"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#ab9fddae8502914b9eab39b672ba7d9c1">cdc_treap_ctorv</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, va_list args)</td></tr>
-<tr class="memdesc:ab9fddae8502914b9eab39b672ba7d9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by args. The last item must be NULL.  <a href="#ab9fddae8502914b9eab39b672ba7d9c1">More...</a><br /></td></tr>
+<tr class="memdesc:ab9fddae8502914b9eab39b672ba7d9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by args. The last item must be CDC_END.  <a href="#ab9fddae8502914b9eab39b672ba7d9c1">More...</a><br /></td></tr>
 <tr class="separator:ab9fddae8502914b9eab39b672ba7d9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496583d238d81a1d970c918828b2dbd8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a496583d238d81a1d970c918828b2dbd8">cdc_treap_ctor1</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="treap_8h.html#aaa9d1ba63bf0aca800d6e05956408462">cdc_priority_fn_t</a> prior)</td></tr>
 <tr class="memdesc:a496583d238d81a1d970c918828b2dbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty treap.  <a href="#a496583d238d81a1d970c918828b2dbd8">More...</a><br /></td></tr>
 <tr class="separator:a496583d238d81a1d970c918828b2dbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a810e25f60cf32373917fa91578b81721"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a810e25f60cf32373917fa91578b81721">cdc_treap_ctorl1</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="treap_8h.html#aaa9d1ba63bf0aca800d6e05956408462">cdc_priority_fn_t</a> prior,...)</td></tr>
-<tr class="memdesc:a810e25f60cf32373917fa91578b81721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL.  <a href="#a810e25f60cf32373917fa91578b81721">More...</a><br /></td></tr>
+<tr class="memdesc:a810e25f60cf32373917fa91578b81721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by an variable number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be CDC_END.  <a href="#a810e25f60cf32373917fa91578b81721">More...</a><br /></td></tr>
 <tr class="separator:a810e25f60cf32373917fa91578b81721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f698d4a5d1198018170a8f750e28ab4"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a4f698d4a5d1198018170a8f750e28ab4">cdc_treap_ctorv1</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> **t, struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *info, <a class="el" href="treap_8h.html#aaa9d1ba63bf0aca800d6e05956408462">cdc_priority_fn_t</a> prior, va_list args)</td></tr>
-<tr class="memdesc:a4f698d4a5d1198018170a8f750e28ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by args. The last item must be NULL.  <a href="#a4f698d4a5d1198018170a8f750e28ab4">More...</a><br /></td></tr>
+<tr class="memdesc:a4f698d4a5d1198018170a8f750e28ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a treap, initialized by args. The last item must be CDC_END.  <a href="#a4f698d4a5d1198018170a8f750e28ab4">More...</a><br /></td></tr>
 <tr class="separator:a4f698d4a5d1198018170a8f750e28ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa95df447ac5650992e8d066f0e4e7b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#aa95df447ac5650992e8d066f0e4e7b2f">cdc_treap_dtor</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t)</td></tr>
 <tr class="memdesc:aa95df447ac5650992e8d066f0e4e7b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the treap.  <a href="#aa95df447ac5650992e8d066f0e4e7b2f">More...</a><br /></td></tr>
 <tr class="separator:aa95df447ac5650992e8d066f0e4e7b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065be804b1194e7b9bd0836df9063601"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a065be804b1194e7b9bd0836df9063601">cdc_treap_get</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t, void *key, void **value)</td></tr>
-<tr class="memdesc:a065be804b1194e7b9bd0836df9063601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pinter to the value that is mapped to a key. If the key does not exist, then NULL will return.  <a href="#a065be804b1194e7b9bd0836df9063601">More...</a><br /></td></tr>
+<tr class="memdesc:a065be804b1194e7b9bd0836df9063601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a value that is mapped to a key. If the key does not exist, then NULL will return.  <a href="#a065be804b1194e7b9bd0836df9063601">More...</a><br /></td></tr>
 <tr class="separator:a065be804b1194e7b9bd0836df9063601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f99cd6e33f6c6d92d58820ce7880d0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#ab3f99cd6e33f6c6d92d58820ce7880d0">cdc_treap_count</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t, void *key)</td></tr>
 <tr class="memdesc:ab3f99cd6e33f6c6d92d58820ce7880d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates.  <a href="#ab3f99cd6e33f6c6d92d58820ce7880d0">More...</a><br /></td></tr>
@@ -143,16 +143,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5af6ee9063ebdaa90400f1543b71e2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of items in the treap.  <a href="#a5af6ee9063ebdaa90400f1543b71e2f9">More...</a><br /></td></tr>
 <tr class="separator:a5af6ee9063ebdaa90400f1543b71e2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb054a75d6ad12854fe77bcabe85ecec"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#acb054a75d6ad12854fe77bcabe85ecec">cdc_treap_empty</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t)</td></tr>
-<tr class="memdesc:acb054a75d6ad12854fe77bcabe85ecec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the treap has size 0; otherwise returns false.  <a href="#acb054a75d6ad12854fe77bcabe85ecec">More...</a><br /></td></tr>
+<tr class="memdesc:acb054a75d6ad12854fe77bcabe85ecec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the treap has no elements.  <a href="#acb054a75d6ad12854fe77bcabe85ecec">More...</a><br /></td></tr>
 <tr class="separator:acb054a75d6ad12854fe77bcabe85ecec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9099d628e93033a4926ae4d757227d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#ab9099d628e93033a4926ae4d757227d4">cdc_treap_clear</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t)</td></tr>
 <tr class="memdesc:ab9099d628e93033a4926ae4d757227d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the elements from the treap.  <a href="#ab9099d628e93033a4926ae4d757227d4">More...</a><br /></td></tr>
 <tr class="separator:ab9099d628e93033a4926ae4d757227d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d54e70baf6d686631ef54b823d28fd"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#ab4d54e70baf6d686631ef54b823d28fd">cdc_treap_insert</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t, void *key, void *value, struct <a class="el" href="structcdc__pair__treap__iter__bool.html">cdc_pair_treap_iter_bool</a> *ret)</td></tr>
-<tr class="memdesc:ab4d54e70baf6d686631ef54b823d28fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts element into the container, if the container doesn't already contain an element with an equivalent key.  <a href="#ab4d54e70baf6d686631ef54b823d28fd">More...</a><br /></td></tr>
+<tr class="memdesc:ab4d54e70baf6d686631ef54b823d28fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an element into the container, if the container doesn't already contain an element with an equivalent key.  <a href="#ab4d54e70baf6d686631ef54b823d28fd">More...</a><br /></td></tr>
 <tr class="separator:ab4d54e70baf6d686631ef54b823d28fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e545850273881b3e2620103af41b7b8"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a5e545850273881b3e2620103af41b7b8">cdc_treap_insert1</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t, void *key, void *value, struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it, bool *inserted)</td></tr>
-<tr class="memdesc:a5e545850273881b3e2620103af41b7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts element into the container, if the container doesn't already contain an element with an equivalent key.  <a href="#a5e545850273881b3e2620103af41b7b8">More...</a><br /></td></tr>
+<tr class="memdesc:a5e545850273881b3e2620103af41b7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an element into the container, if the container doesn't already contain an element with an equivalent key.  <a href="#a5e545850273881b3e2620103af41b7b8">More...</a><br /></td></tr>
 <tr class="separator:a5e545850273881b3e2620103af41b7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1c2844a1c36fdfef80a4717e3d9c1f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#afe1c2844a1c36fdfef80a4717e3d9c1f">cdc_treap_insert_or_assign</a> (struct <a class="el" href="structcdc__treap.html">cdc_treap</a> *t, void *key, void *value, struct <a class="el" href="structcdc__pair__treap__iter__bool.html">cdc_pair_treap_iter_bool</a> *ret)</td></tr>
 <tr class="memdesc:afe1c2844a1c36fdfef80a4717e3d9c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an element or assigns to the current element if the key already exists.  <a href="#afe1c2844a1c36fdfef80a4717e3d9c1f">More...</a><br /></td></tr>
@@ -173,32 +173,32 @@ Functions</h2></td></tr>
 <tr class="memdesc:af29124ceb14464ac8c6046d8d8f84785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the iterator to the end.  <a href="#af29124ceb14464ac8c6046d8d8f84785">More...</a><br /></td></tr>
 <tr class="separator:af29124ceb14464ac8c6046d8d8f84785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602b7cc44f92f46be1cb8a3ad813f0e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a602b7cc44f92f46be1cb8a3ad813f0e5">cdc_treap_iter_next</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
-<tr class="memdesc:a602b7cc44f92f46be1cb8a3ad813f0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the iterator to the next item in the treap.  <a href="#a602b7cc44f92f46be1cb8a3ad813f0e5">More...</a><br /></td></tr>
+<tr class="memdesc:a602b7cc44f92f46be1cb8a3ad813f0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the iterator to the next element in the treap.  <a href="#a602b7cc44f92f46be1cb8a3ad813f0e5">More...</a><br /></td></tr>
 <tr class="separator:a602b7cc44f92f46be1cb8a3ad813f0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af178fe1f5654babd3b6fbebb068430ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#af178fe1f5654babd3b6fbebb068430ad">cdc_treap_iter_prev</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
-<tr class="memdesc:af178fe1f5654babd3b6fbebb068430ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the iterator to the previous item in the treap.  <a href="#af178fe1f5654babd3b6fbebb068430ad">More...</a><br /></td></tr>
+<tr class="memdesc:af178fe1f5654babd3b6fbebb068430ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the iterator to the previous element in the treap.  <a href="#af178fe1f5654babd3b6fbebb068430ad">More...</a><br /></td></tr>
 <tr class="separator:af178fe1f5654babd3b6fbebb068430ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a977a5ed3c68cd063992f13b10889a053"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a977a5ed3c68cd063992f13b10889a053">cdc_treap_iter_has_next</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
-<tr class="memdesc:a977a5ed3c68cd063992f13b10889a053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is at least one item ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false.  <a href="#a977a5ed3c68cd063992f13b10889a053">More...</a><br /></td></tr>
+<tr class="memdesc:a977a5ed3c68cd063992f13b10889a053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false.  <a href="#a977a5ed3c68cd063992f13b10889a053">More...</a><br /></td></tr>
 <tr class="separator:a977a5ed3c68cd063992f13b10889a053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a489cbc2fdf66d9f3d65e94a616800f92"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a489cbc2fdf66d9f3d65e94a616800f92">cdc_treap_iter_has_prev</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
-<tr class="memdesc:a489cbc2fdf66d9f3d65e94a616800f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is at least one item behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false.  <a href="#a489cbc2fdf66d9f3d65e94a616800f92">More...</a><br /></td></tr>
+<tr class="memdesc:a489cbc2fdf66d9f3d65e94a616800f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false.  <a href="#a489cbc2fdf66d9f3d65e94a616800f92">More...</a><br /></td></tr>
 <tr class="separator:a489cbc2fdf66d9f3d65e94a616800f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2f033b67aef23ef685dd99028286614"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#aa2f033b67aef23ef685dd99028286614">cdc_treap_iter_key</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
-<tr class="memdesc:aa2f033b67aef23ef685dd99028286614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the item's key.  <a href="#aa2f033b67aef23ef685dd99028286614">More...</a><br /></td></tr>
+<tr class="memdesc:aa2f033b67aef23ef685dd99028286614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an item's key.  <a href="#aa2f033b67aef23ef685dd99028286614">More...</a><br /></td></tr>
 <tr class="separator:aa2f033b67aef23ef685dd99028286614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a691156b249e21d95bbcf7c99344bf05f"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a691156b249e21d95bbcf7c99344bf05f">cdc_treap_iter_value</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
-<tr class="memdesc:a691156b249e21d95bbcf7c99344bf05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the item's value.  <a href="#a691156b249e21d95bbcf7c99344bf05f">More...</a><br /></td></tr>
+<tr class="memdesc:a691156b249e21d95bbcf7c99344bf05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an item's value.  <a href="#a691156b249e21d95bbcf7c99344bf05f">More...</a><br /></td></tr>
 <tr class="separator:a691156b249e21d95bbcf7c99344bf05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a350fee7099a480c820dbd30ab0f4c7ce"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#a350fee7099a480c820dbd30ab0f4c7ce">cdc_treap_iter_key_value</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it)</td></tr>
 <tr class="memdesc:a350fee7099a480c820dbd30ab0f4c7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pair, where first - key, second - value.  <a href="#a350fee7099a480c820dbd30ab0f4c7ce">More...</a><br /></td></tr>
 <tr class="separator:a350fee7099a480c820dbd30ab0f4c7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9f0fed6076a6ab99644ea3f4246303"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="treap_8h.html#aca9f0fed6076a6ab99644ea3f4246303">cdc_treap_iter_is_eq</a> (struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it1, struct <a class="el" href="structcdc__treap__iter.html">cdc_treap_iter</a> *it2)</td></tr>
-<tr class="memdesc:aca9f0fed6076a6ab99644ea3f4246303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if the iterator it1 equal to the iterator it2, otherwise returns false.  <a href="#aca9f0fed6076a6ab99644ea3f4246303">More...</a><br /></td></tr>
+<tr class="memdesc:aca9f0fed6076a6ab99644ea3f4246303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false if the iterator |it1| equal to the iterator |it2|, otherwise returns false.  <a href="#aca9f0fed6076a6ab99644ea3f4246303">More...</a><br /></td></tr>
 <tr class="separator:aca9f0fed6076a6ab99644ea3f4246303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> is a struct and functions that provide a cartesion tree. </p>
+<div class="textblock"><p>The <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> is a struct and functions that provide a cartesion tree. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="aaa9d1ba63bf0aca800d6e05956408462"></a>
@@ -245,8 +245,8 @@ Functions</h2></td></tr>
 <p>Initializes the iterator to the beginning. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">it</td><td>- <a class="el" href="structcdc__treap__iter.html" title="The cdc_treap_iter struct. ">cdc_treap_iter</a> </td></tr>
+    <tr><td class="paramname">t[in]</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramname">it[out]</td><td>- <a class="el" href="structcdc__treap__iter.html" title="The cdc_treap_iter is service struct. ">cdc_treap_iter</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,7 +272,7 @@ Functions</h2></td></tr>
 <p>Removes all the elements from the treap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,8 +308,8 @@ Functions</h2></td></tr>
 <p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
   </table>
   </dd>
 </dl>
@@ -346,12 +346,12 @@ Functions</h2></td></tr>
 <p>Constructs an empty treap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -390,14 +390,13 @@ Functions</h2></td></tr>
 <p>Constructs an empty treap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">compar</td><td>- function that specifies a strict ordering </td></tr>
-    <tr><td class="paramname">prior</td><td>- function that generates a priority </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prior</td><td>- function that generates a priority </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -433,16 +432,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a treap, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL. </p>
+<p>Constructs a treap, initialized by an variable number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be CDC_END. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error.</dd></dl>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="structcdc__treap.html">cdc_treap</a> *tree = NULL;</div><div class="line"><a class="code" href="structcdc__pair.html">cdc_pair</a> value1 = {<a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(1), <a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(2)};</div><div class="line"><a class="code" href="structcdc__pair.html">cdc_pair</a> value2 = {<a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(3), <a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(4)};</div><div class="line">...</div><div class="line">if (<a class="code" href="treap_8h.html#a6d4836d47c85768f192e63f7282f0735">cdc_treap_ctorl</a>(&amp;tree, info, &amp;value1, &amp;value2, <a class="code" href="common_8h.html#a8855215f90c5fb7dc197d3e71c3cb39b">CDC_END</a>) != <a class="code" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6a22456d7b26ea041c372497bfe8a2d026">CDC_STATUS_OK</a>) {</div><div class="line">  <span class="comment">// handle error</span></div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="a810e25f60cf32373917fa91578b81721"></a>
@@ -483,17 +482,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a treap, initialized by an arbitrary number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be NULL. </p>
+<p>Constructs a treap, initialized by an variable number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be CDC_END. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">compar</td><td>- function that specifies a strict ordering </td></tr>
-    <tr><td class="paramname">prior</td><td>- function that generates a priority </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prior</td><td>- function that generates a priority </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -529,15 +527,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a treap, initialized by args. The last item must be NULL. </p>
+<p>Constructs a treap, initialized by args. The last item must be CDC_END. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -579,17 +577,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a treap, initialized by args. The last item must be NULL. </p>
+<p>Constructs a treap, initialized by args. The last item must be CDC_END. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
-    <tr><td class="paramname">compar</td><td>- function that specifies a strict ordering </td></tr>
-    <tr><td class="paramname">prior</td><td>- function that generates a priority </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prior</td><td>- function that generates a priority </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -612,7 +609,7 @@ Functions</h2></td></tr>
 <p>Destroys the treap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -643,14 +640,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the treap has size 0; otherwise returns false. </p>
+<p>Checks if the treap has no elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the hash treap has size 0; otherwise returns false </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the treap is empty, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -683,8 +680,8 @@ Functions</h2></td></tr>
 <p>Initializes the iterator to the end. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">it</td><td>- <a class="el" href="structcdc__treap__iter.html" title="The cdc_treap_iter struct. ">cdc_treap_iter</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__treap__iter.html" title="The cdc_treap_iter is service struct. ">cdc_treap_iter</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -726,9 +723,9 @@ Functions</h2></td></tr>
 <p>Returns a range containing all elements with key key in the container. The range is defined by two iterators, the first pointing to the first element of the wanted range and the second pointing past the last element of the range. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key value to compare the elements to </td></tr>
-    <tr><td class="paramname">pair</td><td>- pointer will be recorded a pair of iterators defining the wanted range. If there are no such elements, past-the-end iterators are returned as both elements of the pair. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value to compare the elements to </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pair</td><td>- pointer will be recorded a pair of iterators defining the wanted range. If there are no such elements, past-the-end iterators are returned as both elements of the pair. </td></tr>
   </table>
   </dd>
 </dl>
@@ -764,12 +761,12 @@ Functions</h2></td></tr>
 <p>Removes the element (if one exists) with the key equivalent to key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements removed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
 
 </div>
 </div>
@@ -808,9 +805,9 @@ Functions</h2></td></tr>
 <p>Finds an element with key equivalent to key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key value of the element to search for </td></tr>
-    <tr><td class="paramname">it</td><td>- pointer will be recorded iterator to an element with key equivalent to key. If no such element is found, past-the-end iterator is returned. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the element to search for </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- pointer will be recorded iterator to an element with key equivalent to key. If no such element is found, past-the-end iterator is returned. </td></tr>
   </table>
   </dd>
 </dl>
@@ -849,16 +846,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a pinter to the value that is mapped to a key. If the key does not exist, then NULL will return. </p>
+<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key of the element to find </td></tr>
-    <tr><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>if the key is found - CDC_STATUS_OK, otherwise - CDC_STATUS_NOT_FOUND </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
@@ -900,17 +897,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts element into the container, if the container doesn't already contain an element with an equivalent key. </p>
+<p>Inserts an element into the container, if the container doesn't already contain an element with an equivalent key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key of the element </td></tr>
-    <tr><td class="paramname">value</td><td>- value of the element </td></tr>
-    <tr><td class="paramname">ret</td><td>- pair consisting of an iterator to the inserted element (or to the element that prevented the insertion) and a bool denoting whether the insertion took place. The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value of the element </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ret</td><td>- pair consisting of an iterator to the inserted element (or to the element that prevented the insertion) and a bool denoting whether the insertion took place. The pointer can be equal to NULL. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -958,18 +955,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts element into the container, if the container doesn't already contain an element with an equivalent key. </p>
+<p>Inserts an element into the container, if the container doesn't already contain an element with an equivalent key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__map.html" title="The cdc_map struct. ">cdc_map</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key of the element </td></tr>
-    <tr><td class="paramname">value</td><td>- value of the element </td></tr>
-    <tr><td class="paramname">it</td><td>- iterator to the inserted element (or to the element that prevented the insertion). The pointer can be equal to NULL </td></tr>
-    <tr><td class="paramname">inserted</td><td>- bool denoting whether the insertion took place. The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__map.html" title="The cdc_map struct. ">cdc_map</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value of the element </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- iterator to the inserted element (or to the element that prevented the insertion). The pointer can be equal to NULL. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inserted</td><td>- bool denoting whether the insertion took place. The pointer can be equal to NULL. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -1014,14 +1011,14 @@ Functions</h2></td></tr>
 <p>Inserts an element or assigns to the current element if the key already exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key of the element </td></tr>
-    <tr><td class="paramname">value</td><td>- value of the element </td></tr>
-    <tr><td class="paramname">ret</td><td>- pair. The bool component is true if the insertion took place and false if the assignment took place. The iterator component is pointing at the element that was inserted or updated </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value of the element </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ret</td><td>- pair. The bool component is true if the insertion took place and false if the assignment took place. The iterator component is pointing at the element that was inserted or updated. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -1072,15 +1069,15 @@ Functions</h2></td></tr>
 <p>Inserts an element or assigns to the current element if the key already exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__map.html" title="The cdc_map struct. ">cdc_map</a> </td></tr>
-    <tr><td class="paramname">key</td><td>- key of the element </td></tr>
-    <tr><td class="paramname">value</td><td>- value of the element </td></tr>
-    <tr><td class="paramname">it</td><td>- iterator is pointing at the element that was inserted or updated. The pointer can be equal to NULL </td></tr>
-    <tr><td class="paramname">inserted</td><td>- bool is true if the insertion took place and false if the assignment took place. The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__map.html" title="The cdc_map struct. ">cdc_map</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value of the element </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- iterator is pointing at the element that was inserted or updated. The pointer can be equal to NULL </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">inserted</td><td>- bool is true if the insertion took place and false if the assignment took place. The pointer can be equal to NULL </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -1108,7 +1105,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if there is at least one item ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </p>
+<p>Returns true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </dd></dl>
 
 </div>
 </div>
@@ -1136,7 +1140,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if there is at least one item behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </p>
+<p>Returns true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </dd></dl>
 
 </div>
 </div>
@@ -1174,7 +1185,15 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns false if the iterator it1 equal to the iterator it2, otherwise returns false. </p>
+<p>Returns false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it1</td><td>- iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">it2</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
 
 </div>
 </div>
@@ -1202,7 +1221,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a pointer to the item's key. </p>
+<p>Returns an item's key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
 
 </div>
 </div>
@@ -1231,6 +1257,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a pair, where first - key, second - value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
 
 </div>
 </div>
@@ -1250,7 +1283,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Advances the iterator to the next item in the treap. </p>
+<p>Advances the iterator to the next element in the treap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1270,7 +1309,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Advances the iterator to the previous item in the treap. </p>
+<p>Advances the iterator to the previous element in the treap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1298,7 +1343,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a pointer to the item's value. </p>
+<p>Returns an item's value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
 
 </div>
 </div>
@@ -1329,11 +1381,11 @@ Functions</h2></td></tr>
 <p>Returns the number of items in the treap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of items in the treap. </dd></dl>
 
 </div>
 </div>
@@ -1366,8 +1418,8 @@ Functions</h2></td></tr>
 <p>Swaps treaps a and b. This operation is very fast and never fails. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
-    <tr><td class="paramname">b</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__treap.html" title="The cdc_treap is service struct. ">cdc_treap</a> </td></tr>
   </table>
   </dd>
 </dl>
