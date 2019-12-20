@@ -111,34 +111,6 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__sequence__table.html" title="The cdc_sequence_table struct. ">cdc_sequence_table</a> struct. </p>
 <dl class="section warning"><dt>Warning</dt><dd>To avoid problems, do not change the structure fields in the code. Use only special functions to access and change structure fields. </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a6419d26b34598b8b4e38ed876ba5dbd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6419d26b34598b8b4e38ed876ba5dbd8">&#9670;&nbsp;</a></span>back</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void*(* back) (void *cntr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c403fb7da45614e9382e1c51ff7f525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c403fb7da45614e9382e1c51ff7f525">&#9670;&nbsp;</a></span>clear</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* clear) (void *cntr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac3694f7649bf75cb587acf69aa9aac27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3694f7649bf75cb587acf69aa9aac27">&#9670;&nbsp;</a></span>ctor</h2>
 
@@ -181,34 +153,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a94dfaf8dfc18da8fcc05e2a9c6aad179"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94dfaf8dfc18da8fcc05e2a9c6aad179">&#9670;&nbsp;</a></span>empty</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool(* empty) (void *cntr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f4684b8c626a54a79b7311c76e3a5fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f4684b8c626a54a79b7311c76e3a5fd">&#9670;&nbsp;</a></span>erase</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* erase) (void *cntr, size_t index)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae6ae90760d2c3e582f33722314e2879d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6ae90760d2c3e582f33722314e2879d">&#9670;&nbsp;</a></span>front</h2>
 
@@ -223,56 +167,42 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a823987c0762c8c9a0e19f85cd24b4e50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a823987c0762c8c9a0e19f85cd24b4e50">&#9670;&nbsp;</a></span>get</h2>
+<a id="a6419d26b34598b8b4e38ed876ba5dbd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6419d26b34598b8b4e38ed876ba5dbd8">&#9670;&nbsp;</a></span>back</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void*(* get) (void *cntr, size_t index)</td>
+          <td class="memname">void*(* back) (void *cntr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a683555165445d5f6ecc396ed7526a0d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a683555165445d5f6ecc396ed7526a0d7">&#9670;&nbsp;</a></span>insert</h2>
+<a id="a94dfaf8dfc18da8fcc05e2a9c6aad179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94dfaf8dfc18da8fcc05e2a9c6aad179">&#9670;&nbsp;</a></span>empty</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>(* insert) (void *cntr, size_t index, void *value)</td>
+          <td class="memname">bool(* empty) (void *cntr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aec3e43ac0a9b4a0343e064777cca132c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3e43ac0a9b4a0343e064777cca132c">&#9670;&nbsp;</a></span>pop_back</h2>
+<a id="aa73f515656ff7dd3f5160811fff29794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73f515656ff7dd3f5160811fff29794">&#9670;&nbsp;</a></span>size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* pop_back) (void *cntr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a375861abb9aadb53ae2ad913176b39bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a375861abb9aadb53ae2ad913176b39bb">&#9670;&nbsp;</a></span>pop_front</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* pop_front) (void *cntr)</td>
+          <td class="memname">size_t(* size) (void *cntr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -293,6 +223,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="aec3e43ac0a9b4a0343e064777cca132c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3e43ac0a9b4a0343e064777cca132c">&#9670;&nbsp;</a></span>pop_back</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* pop_back) (void *cntr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a18f4671fbf6bb6cad0ac2896ca61175c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18f4671fbf6bb6cad0ac2896ca61175c">&#9670;&nbsp;</a></span>push_front</h2>
 
@@ -307,6 +251,76 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a375861abb9aadb53ae2ad913176b39bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375861abb9aadb53ae2ad913176b39bb">&#9670;&nbsp;</a></span>pop_front</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* pop_front) (void *cntr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a683555165445d5f6ecc396ed7526a0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683555165445d5f6ecc396ed7526a0d7">&#9670;&nbsp;</a></span>insert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a>(* insert) (void *cntr, size_t index, void *value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f4684b8c626a54a79b7311c76e3a5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4684b8c626a54a79b7311c76e3a5fd">&#9670;&nbsp;</a></span>erase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* erase) (void *cntr, size_t index)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c403fb7da45614e9382e1c51ff7f525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c403fb7da45614e9382e1c51ff7f525">&#9670;&nbsp;</a></span>clear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* clear) (void *cntr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a823987c0762c8c9a0e19f85cd24b4e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823987c0762c8c9a0e19f85cd24b4e50">&#9670;&nbsp;</a></span>get</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void*(* get) (void *cntr, size_t index)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6aec2b9df84af9e24d0ced97187ea8c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6aec2b9df84af9e24d0ced97187ea8c9">&#9670;&nbsp;</a></span>set</h2>
 
@@ -315,20 +329,6 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* set) (void *cntr, size_t index, void *value)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa73f515656ff7dd3f5160811fff29794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa73f515656ff7dd3f5160811fff29794">&#9670;&nbsp;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t(* size) (void *cntr)</td>
         </tr>
       </table>
 </div><div class="memdoc">

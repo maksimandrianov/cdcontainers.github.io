@@ -196,150 +196,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> is a struct and functions that provide a hash table. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a5579219766eba801aca3bdca367f0e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5579219766eba801aca3bdca367f0e44">&#9670;&nbsp;</a></span>cdc_hash_table_begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_hash_table_begin </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes the iterator to the beginning. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t[in]</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramname">it[out]</td><td>- <a class="el" href="structcdc__hash__table__iter.html" title="The cdc_hash_table_iter is service struct. ">cdc_hash_table_iter</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2e973ecb81e2d811888d81ab46ed44e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e973ecb81e2d811888d81ab46ed44e5">&#9670;&nbsp;</a></span>cdc_hash_table_bucket_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_hash_table_bucket_count </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of buckets. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>returns the number of buckets. </dd></dl>
-
-</div>
-</div>
-<a id="adb6b4c091720db81a80932ffc0479d34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb6b4c091720db81a80932ffc0479d34">&#9670;&nbsp;</a></span>cdc_hash_table_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_hash_table_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the hash_table. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad49f0c243868121475b4809f6ce92371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad49f0c243868121475b4809f6ce92371">&#9670;&nbsp;</a></span>cdc_hash_table_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t cdc_hash_table_count </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements with key key, that is either 1 or 0. </dd></dl>
-
-</div>
-</div>
 <a id="a402a95693d9c6aa9d0ab180c21885beb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a402a95693d9c6aa9d0ab180c21885beb">&#9670;&nbsp;</a></span>cdc_hash_table_ctor()</h2>
 
@@ -367,6 +223,94 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs an empty hash table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a3dac3f228f52d8509cbcabb63f133bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dac3f228f52d8509cbcabb63f133bc2">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctorl </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a hash table, initialized by an variable number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be CDC_END. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error.</dd></dl>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="structcdc__hash__table.html">cdc_hash_table</a> *table = NULL;</div><div class="line"><a class="code" href="structcdc__pair.html">cdc_pair</a> value1 = {<a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(1), <a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(2)};</div><div class="line"><a class="code" href="structcdc__pair.html">cdc_pair</a> value2 = {<a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(3), <a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(4)};</div><div class="line">...</div><div class="line">if (<a class="code" href="hash-table_8h.html#a3dac3f228f52d8509cbcabb63f133bc2">cdc_hash_table_ctorl</a>(&amp;table, info, &amp;value1, &amp;value2, <a class="code" href="common_8h.html#a8855215f90c5fb7dc197d3e71c3cb39b">CDC_END</a>) != <a class="code" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6a22456d7b26ea041c372497bfe8a2d026">CDC_STATUS_OK</a>) {</div><div class="line">  <span class="comment">// handle error</span></div><div class="line">}</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="ad938c0fcd1265cc717e82766a66ca797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad938c0fcd1265cc717e82766a66ca797">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctorv </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a hash table, initialized by args. The last item must be CDC_END. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
@@ -423,50 +367,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3dac3f228f52d8509cbcabb63f133bc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dac3f228f52d8509cbcabb63f133bc2">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctorl </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs a hash table, initialized by an variable number of pointers on <a class="el" href="structcdc__pair.html">cdc_pair</a>'s(first - key, and the second - value). The last item must be CDC_END. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error.</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="structcdc__hash__table.html">cdc_hash_table</a> *table = NULL;</div><div class="line"><a class="code" href="structcdc__pair.html">cdc_pair</a> value1 = {<a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(1), <a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(2)};</div><div class="line"><a class="code" href="structcdc__pair.html">cdc_pair</a> value2 = {<a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(3), <a class="code" href="casts_8h.html#ad82e6aae87f1f804d776f91403bcbfe9">CDC_FROM_INT</a>(4)};</div><div class="line">...</div><div class="line">if (<a class="code" href="hash-table_8h.html#a3dac3f228f52d8509cbcabb63f133bc2">cdc_hash_table_ctorl</a>(&amp;table, info, &amp;value1, &amp;value2, <a class="code" href="common_8h.html#a8855215f90c5fb7dc197d3e71c3cb39b">CDC_END</a>) != <a class="code" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6a22456d7b26ea041c372497bfe8a2d026">CDC_STATUS_OK</a>) {</div><div class="line">  <span class="comment">// handle error</span></div><div class="line">}</div></div><!-- fragment --> 
-</div>
-</div>
 <a id="a1dd917cb66d2dd1a1f3ec64c61588f4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dd917cb66d2dd1a1f3ec64c61588f4c">&#9670;&nbsp;</a></span>cdc_hash_table_ctorl1()</h2>
 
@@ -511,50 +411,6 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">load_factor</td><td>- maximum load factor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
-
-</div>
-</div>
-<a id="ad938c0fcd1265cc717e82766a66ca797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad938c0fcd1265cc717e82766a66ca797">&#9670;&nbsp;</a></span>cdc_hash_table_ctorv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_ctorv </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> **&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__data__info.html">cdc_data_info</a> *&#160;</td>
-          <td class="paramname"><em>info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs a hash table, initialized by args. The last item must be CDC_END. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- <a class="el" href="structcdc__data__info.html" title="The cdc_data_info struct used to initialize contaners. ">cdc_data_info</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -639,52 +495,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a29bceb6bc12fa6d81ae301f158606a00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29bceb6bc12fa6d81ae301f158606a00">&#9670;&nbsp;</a></span>cdc_hash_table_empty()</h2>
+<a id="a45377b9140266a4dbe4814af8d10fc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45377b9140266a4dbe4814af8d10fc75">&#9670;&nbsp;</a></span>cdc_hash_table_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool cdc_hash_table_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the hash table has no elements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the hash table is empty, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a638df495205212a757e86a574bd2d4fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a638df495205212a757e86a574bd2d4fd">&#9670;&nbsp;</a></span>cdc_hash_table_end()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_hash_table_end </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_get </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -692,8 +510,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -701,32 +525,29 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Initializes the iterator to the end. </p>
+<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__hash__table__iter.html" title="The cdc_hash_table_iter is service struct. ">cdc_hash_table_iter</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
-<a id="a0f801a3073436232ed0c53a8d02bab86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f801a3073436232ed0c53a8d02bab86">&#9670;&nbsp;</a></span>cdc_hash_table_erase()</h2>
+<a id="ad49f0c243868121475b4809f6ce92371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49f0c243868121475b4809f6ce92371">&#9670;&nbsp;</a></span>cdc_hash_table_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t cdc_hash_table_erase </td>
+          <td class="memname">size_t cdc_hash_table_count </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -745,15 +566,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes the element (if one exists) with the key equivalent to key. </p>
+<p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements with key key, that is either 1 or 0. </dd></dl>
 
 </div>
 </div>
@@ -801,48 +622,99 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a45377b9140266a4dbe4814af8d10fc75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45377b9140266a4dbe4814af8d10fc75">&#9670;&nbsp;</a></span>cdc_hash_table_get()</h2>
+<a id="af8d8b5b569ee38072443df7890d316d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d8b5b569ee38072443df7890d316d1">&#9670;&nbsp;</a></span>cdc_hash_table_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_hash_table_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the hash_table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of items in the hash_table. </dd></dl>
+
+</div>
+</div>
+<a id="a29bceb6bc12fa6d81ae301f158606a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bceb6bc12fa6d81ae301f158606a00">&#9670;&nbsp;</a></span>cdc_hash_table_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_hash_table_empty </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the hash table has no elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the hash table is empty, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="adb6b4c091720db81a80932ffc0479d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6b4c091720db81a80932ffc0479d34">&#9670;&nbsp;</a></span>cdc_hash_table_clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_hash_table_get </td>
+          <td class="memname">void cdc_hash_table_clear </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
+<p>Removes all the elements from the hash_table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
@@ -962,43 +834,83 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a105c06bb6b09d474d54a8adac7f0ce20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a105c06bb6b09d474d54a8adac7f0ce20">&#9670;&nbsp;</a></span>cdc_hash_table_iter_has_next()</h2>
+<a id="a0f801a3073436232ed0c53a8d02bab86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f801a3073436232ed0c53a8d02bab86">&#9670;&nbsp;</a></span>cdc_hash_table_erase()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool cdc_hash_table_iter_has_next </td>
+          <td class="memname">size_t cdc_hash_table_erase </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </p>
+<p>Removes the element (if one exists) with the key equivalent to key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
 
 </div>
 </div>
-<a id="a4f9eb2a0dbdd4f6356a788416cf7ee4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f9eb2a0dbdd4f6356a788416cf7ee4b">&#9670;&nbsp;</a></span>cdc_hash_table_iter_is_eq()</h2>
+<a id="a4f7a39bd316b93cf90c6e1b79c6886f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7a39bd316b93cf90c6e1b79c6886f1">&#9670;&nbsp;</a></span>cdc_hash_table_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_hash_table_swap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swaps hash_tables a and b. This operation is very fast and never fails. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5579219766eba801aca3bdca367f0e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5579219766eba801aca3bdca367f0e44">&#9670;&nbsp;</a></span>cdc_hash_table_begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1007,16 +919,16 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool cdc_hash_table_iter_is_eq </td>
+          <td class="memname">static void cdc_hash_table_begin </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it1</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it2</em>&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1031,20 +943,19 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </p>
+<p>Initializes the iterator to the beginning. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it1</td><td>- iterator </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">it2</td><td>- iterator </td></tr>
+    <tr><td class="paramname">t[in]</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramname">it[out]</td><td>- <a class="el" href="structcdc__hash__table__iter.html" title="The cdc_hash_table_iter is service struct. ">cdc_hash_table_iter</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
 
 </div>
 </div>
-<a id="ac92a4391a53c5496ef24b251a514d5c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac92a4391a53c5496ef24b251a514d5c3">&#9670;&nbsp;</a></span>cdc_hash_table_iter_key()</h2>
+<a id="a638df495205212a757e86a574bd2d4fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638df495205212a757e86a574bd2d4fd">&#9670;&nbsp;</a></span>cdc_hash_table_end()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1053,11 +964,21 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* cdc_hash_table_iter_key </td>
+          <td class="memname">static void cdc_hash_table_end </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1067,118 +988,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns an item's key. </p>
+<p>Initializes the iterator to the end. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__hash__table__iter.html" title="The cdc_hash_table_iter is service struct. ">cdc_hash_table_iter</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
-
-</div>
-</div>
-<a id="a885a81a7a9c3ee72e56bed3796821415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a885a81a7a9c3ee72e56bed3796821415">&#9670;&nbsp;</a></span>cdc_hash_table_iter_key_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a> cdc_hash_table_iter_key_value </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pair, where first - key, second - value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
-
-</div>
-</div>
-<a id="a44d7694ae9baf19bed1387ee3a616379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d7694ae9baf19bed1387ee3a616379">&#9670;&nbsp;</a></span>cdc_hash_table_iter_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_hash_table_iter_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the next element in the hash table. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="accab2cc94f7227cb11f332e31df0c8bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accab2cc94f7227cb11f332e31df0c8bf">&#9670;&nbsp;</a></span>cdc_hash_table_iter_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_hash_table_iter_value </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an item's value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
 
 </div>
 </div>
@@ -1249,6 +1066,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>current maximum load factor. </dd></dl>
+
+</div>
+</div>
+<a id="a85da35f02eb856b60c441c200660d7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85da35f02eb856b60c441c200660d7b3">&#9670;&nbsp;</a></span>cdc_hash_table_set_max_load_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_hash_table_set_max_load_factor </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>load_factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the maximum load factor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">load_factor</td><td>- new maximum load factor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1328,8 +1190,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a85da35f02eb856b60c441c200660d7b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85da35f02eb856b60c441c200660d7b3">&#9670;&nbsp;</a></span>cdc_hash_table_set_max_load_factor()</h2>
+<a id="a2e973ecb81e2d811888d81ab46ed44e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e973ecb81e2d811888d81ab46ed44e5">&#9670;&nbsp;</a></span>cdc_hash_table_bucket_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1338,52 +1200,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_hash_table_set_max_load_factor </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>load_factor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the maximum load factor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">load_factor</td><td>- new maximum load factor </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af8d8b5b569ee38072443df7890d316d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8d8b5b569ee38072443df7890d316d1">&#9670;&nbsp;</a></span>cdc_hash_table_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_hash_table_size </td>
+          <td class="memname">static size_t cdc_hash_table_bucket_count </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -1397,34 +1214,211 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of items in the hash_table. </p>
+<p>Returns the number of buckets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of items in the hash_table. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>returns the number of buckets. </dd></dl>
 
 </div>
 </div>
-<a id="a4f7a39bd316b93cf90c6e1b79c6886f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f7a39bd316b93cf90c6e1b79c6886f1">&#9670;&nbsp;</a></span>cdc_hash_table_swap()</h2>
+<a id="a44d7694ae9baf19bed1387ee3a616379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44d7694ae9baf19bed1387ee3a616379">&#9670;&nbsp;</a></span>cdc_hash_table_iter_next()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_hash_table_swap </td>
+          <td class="memname">static void cdc_hash_table_iter_next </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the next element in the hash table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a105c06bb6b09d474d54a8adac7f0ce20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105c06bb6b09d474d54a8adac7f0ce20">&#9670;&nbsp;</a></span>cdc_hash_table_iter_has_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_hash_table_iter_has_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </dd></dl>
+
+</div>
+</div>
+<a id="ac92a4391a53c5496ef24b251a514d5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92a4391a53c5496ef24b251a514d5c3">&#9670;&nbsp;</a></span>cdc_hash_table_iter_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_hash_table_iter_key </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an item's key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
+
+</div>
+</div>
+<a id="accab2cc94f7227cb11f332e31df0c8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accab2cc94f7227cb11f332e31df0c8bf">&#9670;&nbsp;</a></span>cdc_hash_table_iter_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_hash_table_iter_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an item's value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
+
+</div>
+</div>
+<a id="a885a81a7a9c3ee72e56bed3796821415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885a81a7a9c3ee72e56bed3796821415">&#9670;&nbsp;</a></span>cdc_hash_table_iter_key_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a> cdc_hash_table_iter_key_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pair, where first - key, second - value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
+
+</div>
+</div>
+<a id="a4f9eb2a0dbdd4f6356a788416cf7ee4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9eb2a0dbdd4f6356a788416cf7ee4b">&#9670;&nbsp;</a></span>cdc_hash_table_iter_is_eq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_hash_table_iter_is_eq </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__hash__table.html">cdc_hash_table</a> *&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__hash__table__iter.html">cdc_hash_table_iter</a> *&#160;</td>
+          <td class="paramname"><em>it2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1432,16 +1426,22 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Swaps hash_tables a and b. This operation is very fast and never fails. </p>
+<p>Returns false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__hash__table.html" title="The cdc_hash_table is service struct. ">cdc_hash_table</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">it1</td><td>- iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">it2</td><td>- iterator </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
 
 </div>
 </div>

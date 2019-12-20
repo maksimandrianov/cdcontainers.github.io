@@ -153,112 +153,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> is a struct and functions that provide a circular array. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a634d1a77b4ca900e72074df8acd7de3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a634d1a77b4ca900e72074df8acd7de3c">&#9670;&nbsp;</a></span>cdc_circular_array_at()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_at </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>elem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes to pointer an element from specified position in the circular array. Bounds checking is performed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to write at elem </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">elem</td><td>- pointer where an element will be written </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>DC_STATUS_OK in a successful case or CDC_STATUS_OUT_OF_RANGE if the index is incorrect. </dd></dl>
-
-</div>
-</div>
-<a id="a0f0ba0740bc4fad7d6bd09d7edb692f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0ba0740bc4fad7d6bd09d7edb692f8">&#9670;&nbsp;</a></span>cdc_circular_array_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_circular_array_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a last element in the circular array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>last element in the circular array. </dd></dl>
-
-</div>
-</div>
-<a id="a38aad6e56deb6cc2a541812c51a3f9af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38aad6e56deb6cc2a541812c51a3f9af">&#9670;&nbsp;</a></span>cdc_circular_array_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_circular_array_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the circular array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aa8891c8eba891047546550c12c53d8b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8891c8eba891047546550c12c53d8b5">&#9670;&nbsp;</a></span>cdc_circular_array_ctor()</h2>
 
@@ -411,113 +305,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6041cbcb288f2cdbc88de23a8897e9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6041cbcb288f2cdbc88de23a8897e9f">&#9670;&nbsp;</a></span>cdc_circular_array_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_circular_array_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the circular array has no elements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the circular array is empty, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a2be17301902b326184400d241555b355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2be17301902b326184400d241555b355">&#9670;&nbsp;</a></span>cdc_circular_array_erase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_circular_array_erase </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes an element at index position in the circular arrray. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a39142355e498cf84c954b1f8dd67276a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39142355e498cf84c954b1f8dd67276a">&#9670;&nbsp;</a></span>cdc_circular_array_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_circular_array_front </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a first element in the circular array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>first element in the circular array. </dd></dl>
-
-</div>
-</div>
 <a id="ac57d674addc5233bfcb6b5d1d715c00f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac57d674addc5233bfcb6b5d1d715c00f">&#9670;&nbsp;</a></span>cdc_circular_array_get()</h2>
 
@@ -564,14 +351,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ade188e19b3b754ab30e63e531a3f3667"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade188e19b3b754ab30e63e531a3f3667">&#9670;&nbsp;</a></span>cdc_circular_array_insert()</h2>
+<a id="a634d1a77b4ca900e72074df8acd7de3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634d1a77b4ca900e72074df8acd7de3c">&#9670;&nbsp;</a></span>cdc_circular_array_at()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_insert </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_at </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
           <td class="paramname"><em>d</em>, </td>
@@ -585,8 +372,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -596,144 +383,156 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts value at |index| position in the circular array. If index is 0, the value is prepended to the circular array. If index is <a class="el" href="circular-array_8h.html#a3471f9e022d2802ea24225badb11ecd2" title="Returns the number of elements in the circular array. ">cdc_circular_array_size()</a>, the value is appended to the circular array. </p>
+<p>Writes to pointer an element from specified position in the circular array. Bounds checking is performed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be inserted </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to write at elem </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">elem</td><td>- pointer where an element will be written </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>DC_STATUS_OK in a successful case or CDC_STATUS_OUT_OF_RANGE if the index is incorrect. </dd></dl>
 
 </div>
 </div>
-<a id="a315a0cf72e393d61f4cdbaf8f540136e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a315a0cf72e393d61f4cdbaf8f540136e">&#9670;&nbsp;</a></span>cdc_circular_array_pop_back()</h2>
+<a id="a39142355e498cf84c954b1f8dd67276a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39142355e498cf84c954b1f8dd67276a">&#9670;&nbsp;</a></span>cdc_circular_array_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_circular_array_pop_back </td>
+          <td class="memname">static void* cdc_circular_array_front </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Removes a last element in the circular array. </p>
+<p>Returns a first element in the circular array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>first element in the circular array. </dd></dl>
 
 </div>
 </div>
-<a id="ad30f2dca07e1cb15fbc2812a9a1cbe17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad30f2dca07e1cb15fbc2812a9a1cbe17">&#9670;&nbsp;</a></span>cdc_circular_array_pop_front()</h2>
+<a id="a0f0ba0740bc4fad7d6bd09d7edb692f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0ba0740bc4fad7d6bd09d7edb692f8">&#9670;&nbsp;</a></span>cdc_circular_array_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_circular_array_pop_front </td>
+          <td class="memname">static void* cdc_circular_array_back </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Removes a first element in the circular array. </p>
+<p>Returns a last element in the circular array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>last element in the circular array. </dd></dl>
 
 </div>
 </div>
-<a id="a9c30164e7eb29c8b4390038ac79745a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c30164e7eb29c8b4390038ac79745a3">&#9670;&nbsp;</a></span>cdc_circular_array_push_back()</h2>
+<a id="ad6041cbcb288f2cdbc88de23a8897e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6041cbcb288f2cdbc88de23a8897e9f">&#9670;&nbsp;</a></span>cdc_circular_array_empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_push_back </td>
+          <td class="memname">static bool cdc_circular_array_empty </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Inserts an element at the end of the circular array. </p>
+<p>Checks if the circular array has no elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the circular array is empty, false otherwise. </dd></dl>
 
 </div>
 </div>
-<a id="ac415ec446ff4518f1f462e29cb274147"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac415ec446ff4518f1f462e29cb274147">&#9670;&nbsp;</a></span>cdc_circular_array_push_front()</h2>
+<a id="a3471f9e022d2802ea24225badb11ecd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3471f9e022d2802ea24225badb11ecd2">&#9670;&nbsp;</a></span>cdc_circular_array_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_push_front </td>
+          <td class="memname">static size_t cdc_circular_array_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Inserts an element at the beginning of the circular array. </p>
+<p>Returns the number of elements in the circular array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of elements in the circular array. </dd></dl>
 
 </div>
 </div>
@@ -789,38 +588,239 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3471f9e022d2802ea24225badb11ecd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3471f9e022d2802ea24225badb11ecd2">&#9670;&nbsp;</a></span>cdc_circular_array_size()</h2>
+<a id="ade188e19b3b754ab30e63e531a3f3667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade188e19b3b754ab30e63e531a3f3667">&#9670;&nbsp;</a></span>cdc_circular_array_insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t cdc_circular_array_size </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts value at |index| position in the circular array. If index is 0, the value is prepended to the circular array. If index is <a class="el" href="circular-array_8h.html#a3471f9e022d2802ea24225badb11ecd2" title="Returns the number of elements in the circular array. ">cdc_circular_array_size()</a>, the value is appended to the circular array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be inserted </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a2be17301902b326184400d241555b355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be17301902b326184400d241555b355">&#9670;&nbsp;</a></span>cdc_circular_array_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_circular_array_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an element at index position in the circular arrray. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38aad6e56deb6cc2a541812c51a3f9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38aad6e56deb6cc2a541812c51a3f9af">&#9670;&nbsp;</a></span>cdc_circular_array_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_circular_array_clear </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns the number of elements in the circular array. </p>
+<p>Removes all the elements from the circular array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of elements in the circular array. </dd></dl>
+
+</div>
+</div>
+<a id="a9c30164e7eb29c8b4390038ac79745a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c30164e7eb29c8b4390038ac79745a3">&#9670;&nbsp;</a></span>cdc_circular_array_push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_push_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element at the end of the circular array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a315a0cf72e393d61f4cdbaf8f540136e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315a0cf72e393d61f4cdbaf8f540136e">&#9670;&nbsp;</a></span>cdc_circular_array_pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_circular_array_pop_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a last element in the circular array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac415ec446ff4518f1f462e29cb274147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac415ec446ff4518f1f462e29cb274147">&#9670;&nbsp;</a></span>cdc_circular_array_push_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_circular_array_push_front </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element at the beginning of the circular array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="ad30f2dca07e1cb15fbc2812a9a1cbe17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad30f2dca07e1cb15fbc2812a9a1cbe17">&#9670;&nbsp;</a></span>cdc_circular_array_pop_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_circular_array_pop_front </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__circular__array.html">cdc_circular_array</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a first element in the circular array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>- <a class="el" href="structcdc__circular__array.html" title="The cdc_circular_array is service struct. ">cdc_circular_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

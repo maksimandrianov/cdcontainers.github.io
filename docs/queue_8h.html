@@ -130,41 +130,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> is a struct and functions that provide a queue. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6f90b822e851bfc4e9f4d10f4f10b949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f90b822e851bfc4e9f4d10f4f10b949">&#9670;&nbsp;</a></span>cdc_queue_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_queue_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
-          <td class="paramname"><em>q</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns pointer to the last element in the queue. This function assumes that the queue isn't empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the last element in the queue </dd></dl>
-
-</div>
-</div>
 <a id="a74a6ee4648580f8d4b0cc27fcaf914ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74a6ee4648580f8d4b0cc27fcaf914ba">&#9670;&nbsp;</a></span>cdc_queue_ctor()</h2>
 
@@ -338,41 +303,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d250222f4a2d034a4ec959f9dde8199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d250222f4a2d034a4ec959f9dde8199">&#9670;&nbsp;</a></span>cdc_queue_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_queue_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
-          <td class="paramname"><em>q</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the queue has size 0; otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the list has size 0; otherwise returns false </dd></dl>
-
-</div>
-</div>
 <a id="a6f2ce0123346e708bf7fbf840c526152"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f2ce0123346e708bf7fbf840c526152">&#9670;&nbsp;</a></span>cdc_queue_front()</h2>
 
@@ -408,8 +338,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa49f67d08b62a33146327577e2536cf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa49f67d08b62a33146327577e2536cf5">&#9670;&nbsp;</a></span>cdc_queue_pop()</h2>
+<a id="a6f90b822e851bfc4e9f4d10f4f10b949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f90b822e851bfc4e9f4d10f4f10b949">&#9670;&nbsp;</a></span>cdc_queue_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +348,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_queue_pop </td>
+          <td class="memname">static void* cdc_queue_back </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -427,18 +357,89 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes the head item in the queue. This function assumes that the queue isn't empty. </p>
+<p>Returns pointer to the last element in the queue. This function assumes that the queue isn't empty. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the last element in the queue </dd></dl>
+
+</div>
+</div>
+<a id="a5d250222f4a2d034a4ec959f9dde8199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d250222f4a2d034a4ec959f9dde8199">&#9670;&nbsp;</a></span>cdc_queue_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_queue_empty </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the queue has size 0; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the list has size 0; otherwise returns false </dd></dl>
+
+</div>
+</div>
+<a id="a56a707554e4cb5203566e877b520ff5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a707554e4cb5203566e877b520ff5d">&#9670;&nbsp;</a></span>cdc_queue_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_queue_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>
@@ -488,8 +489,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a56a707554e4cb5203566e877b520ff5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56a707554e4cb5203566e877b520ff5d">&#9670;&nbsp;</a></span>cdc_queue_size()</h2>
+<a id="aa49f67d08b62a33146327577e2536cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49f67d08b62a33146327577e2536cf5">&#9670;&nbsp;</a></span>cdc_queue_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +499,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t cdc_queue_size </td>
+          <td class="memname">static void cdc_queue_pop </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__queue.html">cdc_queue</a> *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -507,19 +508,18 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of items in the queue. </p>
+<p>Removes the head item in the queue. This function assumes that the queue isn't empty. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__queue.html" title="The cdc_queue struct. ">cdc_queue</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>

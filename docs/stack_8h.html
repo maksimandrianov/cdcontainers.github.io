@@ -300,6 +300,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a32b11ee118be568fc5d802c9e0127035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b11ee118be568fc5d802c9e0127035">&#9670;&nbsp;</a></span>cdc_stack_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_stack_top </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the stack's top item. This function assumes that the stack isn't empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>- <a class="el" href="structcdc__stack.html" title="The cdc_stack struct. ">cdc_stack</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the stack's top item </dd></dl>
+
+</div>
+</div>
 <a id="af4b180d368fbf1f754e5e59f8b34de8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4b180d368fbf1f754e5e59f8b34de8a">&#9670;&nbsp;</a></span>cdc_stack_empty()</h2>
 
@@ -335,8 +370,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa2cb6e4f78ae04d722597c4c89982b34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2cb6e4f78ae04d722597c4c89982b34">&#9670;&nbsp;</a></span>cdc_stack_pop()</h2>
+<a id="a1de7b24cd20720a4268bbaa18ada3420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de7b24cd20720a4268bbaa18ada3420">&#9670;&nbsp;</a></span>cdc_stack_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,7 +380,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_stack_pop </td>
+          <td class="memname">static size_t cdc_stack_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -359,13 +394,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes the top item from the stack. This function assumes that the stack isn't empty. </p>
+<p>Returns the number of items in the stack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>- <a class="el" href="structcdc__stack.html" title="The cdc_stack struct. ">cdc_stack</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>
@@ -415,8 +451,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1de7b24cd20720a4268bbaa18ada3420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1de7b24cd20720a4268bbaa18ada3420">&#9670;&nbsp;</a></span>cdc_stack_size()</h2>
+<a id="aa2cb6e4f78ae04d722597c4c89982b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cb6e4f78ae04d722597c4c89982b34">&#9670;&nbsp;</a></span>cdc_stack_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +461,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t cdc_stack_size </td>
+          <td class="memname">static void cdc_stack_pop </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -439,14 +475,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of items in the stack. </p>
+<p>Removes the top item from the stack. This function assumes that the stack isn't empty. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>- <a class="el" href="structcdc__stack.html" title="The cdc_stack struct. ">cdc_stack</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>
@@ -484,41 +519,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a32b11ee118be568fc5d802c9e0127035"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32b11ee118be568fc5d802c9e0127035">&#9670;&nbsp;</a></span>cdc_stack_top()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_stack_top </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__stack.html">cdc_stack</a> *&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the stack's top item. This function assumes that the stack isn't empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>- <a class="el" href="structcdc__stack.html" title="The cdc_stack struct. ">cdc_stack</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the stack's top item </dd></dl>
 
 </div>
 </div>

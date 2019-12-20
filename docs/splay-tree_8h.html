@@ -181,107 +181,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> is a struct and functions that provide a splay tree. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ad82419ecd435848b5bb73eeb8620c803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad82419ecd435848b5bb73eeb8620c803">&#9670;&nbsp;</a></span>cdc_splay_tree_begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_splay_tree_begin </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the iterator to the beginning. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t[in]</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramname">it[out]</td><td>- <a class="el" href="structcdc__splay__tree__iter.html" title="The cdc_splay_tree_iter is service struct. ">cdc_splay_tree_iter</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa8b8ba139c2b213da476fc140719cea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8b8ba139c2b213da476fc140719cea5">&#9670;&nbsp;</a></span>cdc_splay_tree_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_splay_tree_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the splay_tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a56c90f408b2638e60e7efc6ab55a1fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c90f408b2638e60e7efc6ab55a1fbe">&#9670;&nbsp;</a></span>cdc_splay_tree_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t cdc_splay_tree_count </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements with key key, that is either 1 or 0. </dd></dl>
-
-</div>
-</div>
 <a id="ae79a702a0de54b20141bf3f2f4bd5c09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae79a702a0de54b20141bf3f2f4bd5c09">&#9670;&nbsp;</a></span>cdc_splay_tree_ctor()</h2>
 
@@ -434,49 +333,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1556e90c5ecb1a596bdd201b172565c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1556e90c5ecb1a596bdd201b172565c8">&#9670;&nbsp;</a></span>cdc_splay_tree_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_splay_tree_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the splay tree has no elements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the splay tree is empty, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a88dcb7d7db9081183f15ee4c6e923a15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88dcb7d7db9081183f15ee4c6e923a15">&#9670;&nbsp;</a></span>cdc_splay_tree_end()</h2>
+<a id="aa2f23a58b8ea2c4fed2374806c82567d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f23a58b8ea2c4fed2374806c82567d">&#9670;&nbsp;</a></span>cdc_splay_tree_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_splay_tree_end </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_splay_tree_get </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -484,8 +348,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -495,25 +365,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the iterator to the end. </p>
+<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__splay__tree__iter.html" title="The cdc_splay_tree_iter is service struct. ">cdc_splay_tree_iter</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
-<a id="a247b5241f237f76565682d060fd37081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a247b5241f237f76565682d060fd37081">&#9670;&nbsp;</a></span>cdc_splay_tree_erase()</h2>
+<a id="a56c90f408b2638e60e7efc6ab55a1fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c90f408b2638e60e7efc6ab55a1fbe">&#9670;&nbsp;</a></span>cdc_splay_tree_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t cdc_splay_tree_erase </td>
+          <td class="memname">size_t cdc_splay_tree_count </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -532,15 +404,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes the element (if one exists) with the key equivalent to key. </p>
+<p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements with key key, that is either 1 or 0. </dd></dl>
 
 </div>
 </div>
@@ -588,48 +460,99 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa2f23a58b8ea2c4fed2374806c82567d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2f23a58b8ea2c4fed2374806c82567d">&#9670;&nbsp;</a></span>cdc_splay_tree_get()</h2>
+<a id="ae5bb43ff49720dc23451738381d0c8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bb43ff49720dc23451738381d0c8bc">&#9670;&nbsp;</a></span>cdc_splay_tree_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_splay_tree_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the splay_tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of items in the splay_tree. </dd></dl>
+
+</div>
+</div>
+<a id="a1556e90c5ecb1a596bdd201b172565c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1556e90c5ecb1a596bdd201b172565c8">&#9670;&nbsp;</a></span>cdc_splay_tree_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_splay_tree_empty </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the splay tree has no elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the splay tree is empty, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aa8b8ba139c2b213da476fc140719cea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b8ba139c2b213da476fc140719cea5">&#9670;&nbsp;</a></span>cdc_splay_tree_clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_splay_tree_get </td>
+          <td class="memname">void cdc_splay_tree_clear </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
+<p>Removes all the elements from the splay_tree. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
@@ -855,6 +778,207 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a247b5241f237f76565682d060fd37081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247b5241f237f76565682d060fd37081">&#9670;&nbsp;</a></span>cdc_splay_tree_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t cdc_splay_tree_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the element (if one exists) with the key equivalent to key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
+
+</div>
+</div>
+<a id="ac5611c6e5721c223b36b7454f7cfe2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5611c6e5721c223b36b7454f7cfe2bc">&#9670;&nbsp;</a></span>cdc_splay_tree_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_splay_tree_swap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swaps splay_trees a and b. This operation is very fast and never fails. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad82419ecd435848b5bb73eeb8620c803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82419ecd435848b5bb73eeb8620c803">&#9670;&nbsp;</a></span>cdc_splay_tree_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_splay_tree_begin </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the iterator to the beginning. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t[in]</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+    <tr><td class="paramname">it[out]</td><td>- <a class="el" href="structcdc__splay__tree__iter.html" title="The cdc_splay_tree_iter is service struct. ">cdc_splay_tree_iter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a88dcb7d7db9081183f15ee4c6e923a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dcb7d7db9081183f15ee4c6e923a15">&#9670;&nbsp;</a></span>cdc_splay_tree_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_splay_tree_end </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the iterator to the end. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__splay__tree__iter.html" title="The cdc_splay_tree_iter is service struct. ">cdc_splay_tree_iter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa45d05a441501ca571c95759d9e30f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa45d05a441501ca571c95759d9e30f6">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_splay_tree_iter_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the next element in the splay tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20df6542d4c7a6d3bf690cf645b58478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20df6542d4c7a6d3bf690cf645b58478">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_splay_tree_iter_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the previous element in the splay tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abcd0443794982497250c9e5f1ef69a78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcd0443794982497250c9e5f1ef69a78">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_has_next()</h2>
 
@@ -925,6 +1049,111 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab3d2be41a5ff817cb595fa21482143dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d2be41a5ff817cb595fa21482143dc">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_splay_tree_iter_key </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an item's key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
+
+</div>
+</div>
+<a id="afa7326cfee68a517dd9cec3d288454e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7326cfee68a517dd9cec3d288454e4">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_splay_tree_iter_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an item's value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
+
+</div>
+</div>
+<a id="adcaf5d25ca6a5f1ce34522b26bbb7724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcaf5d25ca6a5f1ce34522b26bbb7724">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_key_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a> cdc_splay_tree_iter_key_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pair, where first - key, second - value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
+
+</div>
+</div>
 <a id="a2099bbe8ef7aa082a1c022bae19446ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2099bbe8ef7aa082a1c022bae19446ec">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_is_eq()</h2>
 
@@ -968,235 +1197,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
-
-</div>
-</div>
-<a id="ab3d2be41a5ff817cb595fa21482143dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3d2be41a5ff817cb595fa21482143dc">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_key()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_splay_tree_iter_key </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an item's key. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
-
-</div>
-</div>
-<a id="adcaf5d25ca6a5f1ce34522b26bbb7724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcaf5d25ca6a5f1ce34522b26bbb7724">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_key_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a> cdc_splay_tree_iter_key_value </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pair, where first - key, second - value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
-
-</div>
-</div>
-<a id="aaa45d05a441501ca571c95759d9e30f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa45d05a441501ca571c95759d9e30f6">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_splay_tree_iter_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the next element in the splay tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a20df6542d4c7a6d3bf690cf645b58478"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20df6542d4c7a6d3bf690cf645b58478">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_prev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_splay_tree_iter_prev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the previous element in the splay tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afa7326cfee68a517dd9cec3d288454e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa7326cfee68a517dd9cec3d288454e4">&#9670;&nbsp;</a></span>cdc_splay_tree_iter_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_splay_tree_iter_value </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree__iter.html">cdc_splay_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an item's value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
-
-</div>
-</div>
-<a id="ae5bb43ff49720dc23451738381d0c8bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5bb43ff49720dc23451738381d0c8bc">&#9670;&nbsp;</a></span>cdc_splay_tree_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_splay_tree_size </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of items in the splay_tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of items in the splay_tree. </dd></dl>
-
-</div>
-</div>
-<a id="ac5611c6e5721c223b36b7454f7cfe2bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5611c6e5721c223b36b7454f7cfe2bc">&#9670;&nbsp;</a></span>cdc_splay_tree_swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_splay_tree_swap </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__splay__tree.html">cdc_splay_tree</a> *&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Swaps splay_trees a and b. This operation is very fast and never fails. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__splay__tree.html" title="The cdc_splay_tree is service struct. ">cdc_splay_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

@@ -151,75 +151,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> is a struct and functions that provide a double-ended queue. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a1e6ed33271f8ac0bac63570b4201edd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e6ed33271f8ac0bac63570b4201edd5">&#9670;&nbsp;</a></span>cdc_deque_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_deque_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the last item in the deque. This function assumes that the deque isn't empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the last item in the deque </dd></dl>
-
-</div>
-</div>
-<a id="a13b89b148332e18fb1333fa42502d01e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13b89b148332e18fb1333fa42502d01e">&#9670;&nbsp;</a></span>cdc_deque_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_deque_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the deque. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ab829d4f4f8a47e947801ba6ec99df6c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab829d4f4f8a47e947801ba6ec99df6c3">&#9670;&nbsp;</a></span>cdc_deque_ctor()</h2>
 
@@ -393,121 +324,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6892df0f3647aacfe1ecc2bfd77963ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6892df0f3647aacfe1ecc2bfd77963ed">&#9670;&nbsp;</a></span>cdc_deque_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_deque_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the deque has size 0; otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the deque has size 0; otherwise returns false </dd></dl>
-
-</div>
-</div>
-<a id="ac4e4202c5f8d636303454d7a3bbaea2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4e4202c5f8d636303454d7a3bbaea2e">&#9670;&nbsp;</a></span>cdc_deque_erase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_deque_erase </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Removes the element at index position. Index must be a valid index position in the deque. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
-    <tr><td class="paramname">index</td><td>- index position where the item will be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae2837693e9b8aaa1b6cc5505a4ccf00b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2837693e9b8aaa1b6cc5505a4ccf00b">&#9670;&nbsp;</a></span>cdc_deque_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_deque_front </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the first item in the deque. This function assumes that the deque isn't empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the first item in the deque </dd></dl>
-
-</div>
-</div>
 <a id="ad94e76629331eaf17d88fdebd0bda014"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad94e76629331eaf17d88fdebd0bda014">&#9670;&nbsp;</a></span>cdc_deque_get()</h2>
 
@@ -551,6 +367,198 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>item at the index position </dd></dl>
+
+</div>
+</div>
+<a id="ae2837693e9b8aaa1b6cc5505a4ccf00b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2837693e9b8aaa1b6cc5505a4ccf00b">&#9670;&nbsp;</a></span>cdc_deque_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_deque_front </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the first item in the deque. This function assumes that the deque isn't empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the first item in the deque </dd></dl>
+
+</div>
+</div>
+<a id="a1e6ed33271f8ac0bac63570b4201edd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6ed33271f8ac0bac63570b4201edd5">&#9670;&nbsp;</a></span>cdc_deque_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_deque_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the last item in the deque. This function assumes that the deque isn't empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the last item in the deque </dd></dl>
+
+</div>
+</div>
+<a id="a6892df0f3647aacfe1ecc2bfd77963ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6892df0f3647aacfe1ecc2bfd77963ed">&#9670;&nbsp;</a></span>cdc_deque_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_deque_empty </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the deque has size 0; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the deque has size 0; otherwise returns false </dd></dl>
+
+</div>
+</div>
+<a id="a3521e06a25ffc6e33015f61d13bd36d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3521e06a25ffc6e33015f61d13bd36d8">&#9670;&nbsp;</a></span>cdc_deque_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_deque_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the deque. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
+
+</div>
+</div>
+<a id="a125255e949ff95dedfdc230248b66c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125255e949ff95dedfdc230248b66c03">&#9670;&nbsp;</a></span>cdc_deque_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_deque_set </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the deque at index position to the value. The function is not called to free memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+    <tr><td class="paramname">index</td><td>- index position where the value will be written </td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -607,8 +615,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afe388997cb7171dc7275b33f5295ebcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe388997cb7171dc7275b33f5295ebcd">&#9670;&nbsp;</a></span>cdc_deque_pop_back()</h2>
+<a id="ac4e4202c5f8d636303454d7a3bbaea2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e4202c5f8d636303454d7a3bbaea2e">&#9670;&nbsp;</a></span>cdc_deque_erase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,11 +625,21 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_deque_pop_back </td>
+          <td class="memname">static void cdc_deque_erase </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -631,18 +649,19 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes the last item in the deque. </p>
+<p>Removes the element at index position. Index must be a valid index position in the deque. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+    <tr><td class="paramname">index</td><td>- index position where the item will be removed </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1db287c67f354ebc1300f64552765112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1db287c67f354ebc1300f64552765112">&#9670;&nbsp;</a></span>cdc_deque_pop_front()</h2>
+<a id="a13b89b148332e18fb1333fa42502d01e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b89b148332e18fb1333fa42502d01e">&#9670;&nbsp;</a></span>cdc_deque_clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,7 +670,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_deque_pop_front </td>
+          <td class="memname">static void cdc_deque_clear </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
@@ -665,7 +684,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes the first item in the deque. </p>
+<p>Removes all the elements from the deque. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
@@ -721,6 +740,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afe388997cb7171dc7275b33f5295ebcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe388997cb7171dc7275b33f5295ebcd">&#9670;&nbsp;</a></span>cdc_deque_pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_deque_pop_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the last item in the deque. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aff54f08c3c1b0869bf3fa6ce65d34bd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff54f08c3c1b0869bf3fa6ce65d34bd0">&#9670;&nbsp;</a></span>cdc_deque_push_front()</h2>
 
@@ -767,8 +820,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a125255e949ff95dedfdc230248b66c03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a125255e949ff95dedfdc230248b66c03">&#9670;&nbsp;</a></span>cdc_deque_set()</h2>
+<a id="a1db287c67f354ebc1300f64552765112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1db287c67f354ebc1300f64552765112">&#9670;&nbsp;</a></span>cdc_deque_pop_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,59 +830,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_deque_set </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the deque at index position to the value. The function is not called to free memory. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
-    <tr><td class="paramname">index</td><td>- index position where the value will be written </td></tr>
-    <tr><td class="paramname">value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3521e06a25ffc6e33015f61d13bd36d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3521e06a25ffc6e33015f61d13bd36d8">&#9670;&nbsp;</a></span>cdc_deque_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_deque_size </td>
+          <td class="memname">static void cdc_deque_pop_front </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__deque.html">cdc_deque</a> *&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
@@ -843,14 +844,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of items in the deque. </p>
+<p>Removes the first item in the deque. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">d</td><td>- <a class="el" href="structcdc__deque.html" title="The cdc_deque struct. ">cdc_deque</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>

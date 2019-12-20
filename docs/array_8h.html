@@ -164,230 +164,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> is a struct and functions that provide a dynamic array. </p>
 <p>Example usage array: </p><div class="fragment"><div class="line"><span class="comment">// The MIT License (MIT)</span></div><div class="line"><span class="comment">// Copyright (c) 2017 Maksim Andrianov</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// Permission is hereby granted, free of charge, to any person obtaining a copy</span></div><div class="line"><span class="comment">// of this software and associated documentation files (the &quot;Software&quot;), to</span></div><div class="line"><span class="comment">// deal in the Software without restriction, including without limitation the</span></div><div class="line"><span class="comment">// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or</span></div><div class="line"><span class="comment">// sell copies of the Software, and to permit persons to whom the Software is</span></div><div class="line"><span class="comment">// furnished to do so, subject to the following conditions:</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// The above copyright notice and this permission notice shall be included in</span></div><div class="line"><span class="comment">// all copies or substantial portions of the Software.</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span></div><div class="line"><span class="comment">// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span></div><div class="line"><span class="comment">// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span></div><div class="line"><span class="comment">// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span></div><div class="line"><span class="comment">// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING</span></div><div class="line"><span class="comment">// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS</span></div><div class="line"><span class="comment">// IN THE SOFTWARE.</span></div><div class="line"></div><div class="line"><span class="comment">// Program to find first n prime numbers.</span></div><div class="line"><span class="preprocessor">#define CDC_USE_SHORT_NAMES</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cdc_8h.html">cdcontainers/cdc.h</a>&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"></div><div class="line"><span class="comment">// This function based on the Sieve of Eratosthenes.</span></div><div class="line"><span class="comment">// https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</span></div><div class="line">array_t *find_uint_prime_numbers(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n)</div><div class="line">{</div><div class="line">  array_t *numbers = NULL;</div><div class="line">  <span class="keywordflow">if</span> (array_ctor(&amp;numbers, NULL <span class="comment">/* data info */</span>) != <a class="code" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6a22456d7b26ea041c372497bfe8a2d026">CDC_STATUS_OK</a>)</div><div class="line">    <span class="keywordflow">return</span> NULL;</div><div class="line"></div><div class="line">  array_reserve(numbers, n + 1);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; n + 1; ++i)</div><div class="line">    array_push_back(numbers, <a class="code" href="casts_8h.html#a0d839d829f454bfa3f964cda3d487dd3">CDC_FROM_UINT</a>(i));</div><div class="line"></div><div class="line">  array_t *prime_numbers = NULL;</div><div class="line">  <span class="keywordflow">if</span> (array_ctor(&amp;prime_numbers, NULL <span class="comment">/* data info */</span>) != <a class="code" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6a22456d7b26ea041c372497bfe8a2d026">CDC_STATUS_OK</a>) {</div><div class="line">    array_dtor(numbers);</div><div class="line">    <span class="keywordflow">return</span> NULL;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p = 2; p &lt; n + 1; ++p) {</div><div class="line">    <span class="keywordtype">void</span> *val = array_get(numbers, p);</div><div class="line">    <span class="keywordflow">if</span> (<a class="code" href="casts_8h.html#acac643281ea4e15529956d98f2c1ae71">CDC_TO_UINT</a>(val) != 0) {</div><div class="line">      <span class="keywordflow">if</span> (array_push_back(prime_numbers, val) != <a class="code" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6a22456d7b26ea041c372497bfe8a2d026">CDC_STATUS_OK</a>) {</div><div class="line">        array_dtor(prime_numbers);</div><div class="line">        array_dtor(numbers);</div><div class="line">        <span class="keywordflow">return</span> NULL;</div><div class="line">      }</div><div class="line"></div><div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = p * p; i &lt; n + 1; i += p)</div><div class="line">        array_set(numbers, i, <a class="code" href="casts_8h.html#a0d839d829f454bfa3f964cda3d487dd3">CDC_FROM_UINT</a>(0));</div><div class="line">    }</div><div class="line">  }</div><div class="line"></div><div class="line">  array_dtor(numbers);</div><div class="line">  <span class="keywordflow">return</span> prime_numbers;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv)</div><div class="line">{</div><div class="line">  <a class="code" href="global_8h.html#a0925222e5314954d861fb0d736bfe1d0">CDC_UNUSED</a>(argc);</div><div class="line">  <a class="code" href="global_8h.html#a0925222e5314954d861fb0d736bfe1d0">CDC_UNUSED</a>(argv);</div><div class="line"></div><div class="line">  array_t *prime_numbers = find_uint_prime_numbers(1000);</div><div class="line">  <span class="keywordflow">if</span> (!prime_numbers)</div><div class="line">    <span class="keywordflow">return</span> EXIT_FAILURE;</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; array_size(prime_numbers); ++i)</div><div class="line">    printf(<span class="stringliteral">&quot;%u &quot;</span>, <a class="code" href="casts_8h.html#acac643281ea4e15529956d98f2c1ae71">CDC_TO_UINT</a>(array_get(prime_numbers, i)));</div><div class="line"></div><div class="line">  printf(<span class="stringliteral">&quot;\n&quot;</span>);</div><div class="line">  array_dtor(prime_numbers);</div><div class="line">  <span class="keywordflow">return</span> EXIT_SUCCESS;</div><div class="line">}</div></div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a8890c6950ff5f257228ced02c71c4537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8890c6950ff5f257228ced02c71c4537">&#9670;&nbsp;</a></span>cdc_array_append()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_append </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Appends elements at the end of array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- pointer on data </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- the number of data elements </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
-
-</div>
-</div>
-<a id="a2e96e19c9dad5843b2f505f60806f5d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e96e19c9dad5843b2f505f60806f5d1">&#9670;&nbsp;</a></span>cdc_array_append_move()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_append_move </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>other</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Appends one array to the end of other array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
-
-</div>
-</div>
-<a id="a7efc89a72fde71284a7af242a64275c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7efc89a72fde71284a7af242a64275c3">&#9670;&nbsp;</a></span>cdc_array_at()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_at </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>elem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes to pointer an element from specified position in the array. Bounds checking is performed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to write at elem </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">elem</td><td>- pointer where an element will be written </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>DC_STATUS_OK in a successful case or CDC_STATUS_OUT_OF_RANGE if the index is incorrect. </dd></dl>
-
-</div>
-</div>
-<a id="a9583cdb9888cb3ed5db94f91cba8d2be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9583cdb9888cb3ed5db94f91cba8d2be">&#9670;&nbsp;</a></span>cdc_array_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_array_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a last element in the array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>last element in the array. </dd></dl>
-
-</div>
-</div>
-<a id="a00dba6828fc251bf8b2eefc07be312fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00dba6828fc251bf8b2eefc07be312fa">&#9670;&nbsp;</a></span>cdc_array_capacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_array_capacity </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of elements that the container has currently allocated space for. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>capacity of the currently allocated storage. </dd></dl>
-
-</div>
-</div>
-<a id="a3e68428b4a76796f24e144e08b8ba178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e68428b4a76796f24e144e08b8ba178">&#9670;&nbsp;</a></span>cdc_array_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_array_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a54408866e654a55d971df2f6f57aa4ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54408866e654a55d971df2f6f57aa4ab">&#9670;&nbsp;</a></span>cdc_array_ctor()</h2>
 
@@ -514,41 +290,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aea0eeb5cf6141129e95be3f2ef2d5ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea0eeb5cf6141129e95be3f2ef2d5ca9">&#9670;&nbsp;</a></span>cdc_array_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void** cdc_array_data </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the data stored in the array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pointer to the data stored in the array. </dd></dl>
-
-</div>
-</div>
 <a id="ac4f393cbf0bce61425a213d48c897eb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4f393cbf0bce61425a213d48c897eb8">&#9670;&nbsp;</a></span>cdc_array_dtor()</h2>
 
@@ -572,113 +313,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a72b7bea85941063fbf733f7ed36ea260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72b7bea85941063fbf733f7ed36ea260">&#9670;&nbsp;</a></span>cdc_array_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_array_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the array has no elements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the array is empty, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a6875461be402d36c092eb49c4cabf36e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6875461be402d36c092eb49c4cabf36e">&#9670;&nbsp;</a></span>cdc_array_erase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_array_erase </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes an element at index position in the arrray. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a267f2fdb859f397d86dd558bb19f09b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a267f2fdb859f397d86dd558bb19f09b1">&#9670;&nbsp;</a></span>cdc_array_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_array_front </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a first element in the array. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>first element in the array. </dd></dl>
 
 </div>
 </div>
@@ -728,14 +362,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afc9e80f97d618a667c9d89998353d296"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc9e80f97d618a667c9d89998353d296">&#9670;&nbsp;</a></span>cdc_array_insert()</h2>
+<a id="a7efc89a72fde71284a7af242a64275c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7efc89a72fde71284a7af242a64275c3">&#9670;&nbsp;</a></span>cdc_array_at()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_insert </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_at </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
           <td class="paramname"><em>v</em>, </td>
@@ -749,8 +383,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -760,21 +394,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts value at |index| position in the array. If index is 0, the value is prepended to the array. If index is <a class="el" href="array_8h.html#aaf614aa623fb4e42dee2142cbd1e5862" title="Returns the number of elements in the array. ">cdc_array_size()</a>, the value is appended to the array. </p>
+<p>Writes to pointer an element from specified position in the array. Bounds checking is performed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be inserted </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to write at elem </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">elem</td><td>- pointer where an element will be written </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>DC_STATUS_OK in a successful case or CDC_STATUS_OUT_OF_RANGE if the index is incorrect. </dd></dl>
 
 </div>
 </div>
-<a id="ab0f2d739589dee01413d2fcd5dfbba25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0f2d739589dee01413d2fcd5dfbba25">&#9670;&nbsp;</a></span>cdc_array_pop_back()</h2>
+<a id="a267f2fdb859f397d86dd558bb19f09b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267f2fdb859f397d86dd558bb19f09b1">&#9670;&nbsp;</a></span>cdc_array_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,7 +417,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_array_pop_back </td>
+          <td class="memname">static void* cdc_array_front </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -797,51 +431,84 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes a last element in the array. </p>
+<p>Returns a first element in the array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>first element in the array. </dd></dl>
 
 </div>
 </div>
-<a id="af5f5ea759890598b41133c721b195505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f5ea759890598b41133c721b195505">&#9670;&nbsp;</a></span>cdc_array_push_back()</h2>
+<a id="a9583cdb9888cb3ed5db94f91cba8d2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9583cdb9888cb3ed5db94f91cba8d2be">&#9670;&nbsp;</a></span>cdc_array_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_push_back </td>
+          <td class="memname">static void* cdc_array_back </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Inserts an element at the end of the array. </p>
+<p>Returns a last element in the array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>last element in the array. </dd></dl>
+
+</div>
+</div>
+<a id="aea0eeb5cf6141129e95be3f2ef2d5ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0eeb5cf6141129e95be3f2ef2d5ca9">&#9670;&nbsp;</a></span>cdc_array_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void** cdc_array_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the data stored in the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to the data stored in the array. </dd></dl>
 
 </div>
 </div>
@@ -880,6 +547,138 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a72b7bea85941063fbf733f7ed36ea260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b7bea85941063fbf733f7ed36ea260">&#9670;&nbsp;</a></span>cdc_array_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_array_empty </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the array has no elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the array is empty, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aaf614aa623fb4e42dee2142cbd1e5862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf614aa623fb4e42dee2142cbd1e5862">&#9670;&nbsp;</a></span>cdc_array_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_array_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements in the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of elements in the array. </dd></dl>
+
+</div>
+</div>
+<a id="a00dba6828fc251bf8b2eefc07be312fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dba6828fc251bf8b2eefc07be312fa">&#9670;&nbsp;</a></span>cdc_array_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_array_capacity </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements that the container has currently allocated space for. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>capacity of the currently allocated storage. </dd></dl>
+
+</div>
+</div>
+<a id="aa79f6f3db76e1666a21b8af4a5df1ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79f6f3db76e1666a21b8af4a5df1ce2">&#9670;&nbsp;</a></span>cdc_array_shrink_to_fit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_shrink_to_fit </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests the container to reduce its capacity to fit its size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
 
 </div>
 </div>
@@ -935,14 +734,96 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa79f6f3db76e1666a21b8af4a5df1ce2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa79f6f3db76e1666a21b8af4a5df1ce2">&#9670;&nbsp;</a></span>cdc_array_shrink_to_fit()</h2>
+<a id="afc9e80f97d618a667c9d89998353d296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9e80f97d618a667c9d89998353d296">&#9670;&nbsp;</a></span>cdc_array_insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_shrink_to_fit </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts value at |index| position in the array. If index is 0, the value is prepended to the array. If index is <a class="el" href="array_8h.html#aaf614aa623fb4e42dee2142cbd1e5862" title="Returns the number of elements in the array. ">cdc_array_size()</a>, the value is appended to the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be inserted </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a6875461be402d36c092eb49c4cabf36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6875461be402d36c092eb49c4cabf36e">&#9670;&nbsp;</a></span>cdc_array_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_array_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an element at index position in the arrray. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e68428b4a76796f24e144e08b8ba178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e68428b4a76796f24e144e08b8ba178">&#9670;&nbsp;</a></span>cdc_array_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_array_clear </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -951,19 +832,56 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Requests the container to reduce its capacity to fit its size. </p>
+<p>Removes all the elements from the array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
 
 </div>
 </div>
-<a id="aaf614aa623fb4e42dee2142cbd1e5862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf614aa623fb4e42dee2142cbd1e5862">&#9670;&nbsp;</a></span>cdc_array_size()</h2>
+<a id="af5f5ea759890598b41133c721b195505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f5ea759890598b41133c721b195505">&#9670;&nbsp;</a></span>cdc_array_push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_push_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element at the end of the array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="ab0f2d739589dee01413d2fcd5dfbba25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f2d739589dee01413d2fcd5dfbba25">&#9670;&nbsp;</a></span>cdc_array_pop_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,7 +890,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t cdc_array_size </td>
+          <td class="memname">static void cdc_array_pop_back </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -986,14 +904,96 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of elements in the array. </p>
+<p>Removes a last element in the array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of elements in the array. </dd></dl>
+
+</div>
+</div>
+<a id="a8890c6950ff5f257228ced02c71c4537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8890c6950ff5f257228ced02c71c4537">&#9670;&nbsp;</a></span>cdc_array_append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_append </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends elements at the end of array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>- pointer on data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- the number of data elements </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a2e96e19c9dad5843b2f505f60806f5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e96e19c9dad5843b2f505f60806f5d1">&#9670;&nbsp;</a></span>cdc_array_append_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_array_append_move </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__array.html">cdc_array</a> *&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends one array to the end of other array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- <a class="el" href="structcdc__array.html" title="The cdc_array is service struct. ">cdc_array</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>

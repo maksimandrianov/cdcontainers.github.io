@@ -108,42 +108,6 @@ Functions</h2></td></tr>
 <tr class="separator:a92b541388ce937222431e12258fc31d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a869e4b2bbebc58ac100fd80a7ba3f5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a869e4b2bbebc58ac100fd80a7ba3f5ee">&#9670;&nbsp;</a></span>CDC_HAS_CMP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CDC_HAS_CMP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">dinfo</td><td>)</td>
-          <td>&#160;&#160;&#160;(dinfo &amp;&amp; dinfo-&gt;cmp)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a77986dc5578e383855da247bb068971d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77986dc5578e383855da247bb068971d">&#9670;&nbsp;</a></span>CDC_HAS_CP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CDC_HAS_CP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">dinfo</td><td>)</td>
-          <td>&#160;&#160;&#160;(dinfo &amp;&amp; dinfo-&gt;cp)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1d18ec7c6df32bc9f36ce2005ac7a37f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d18ec7c6df32bc9f36ce2005ac7a37f">&#9670;&nbsp;</a></span>CDC_HAS_DFREE</h2>
 
@@ -156,6 +120,24 @@ Functions</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">dinfo</td><td>)</td>
           <td>&#160;&#160;&#160;(dinfo &amp;&amp; dinfo-&gt;dfree)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a869e4b2bbebc58ac100fd80a7ba3f5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869e4b2bbebc58ac100fd80a7ba3f5ee">&#9670;&nbsp;</a></span>CDC_HAS_CMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CDC_HAS_CMP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dinfo</td><td>)</td>
+          <td>&#160;&#160;&#160;(dinfo &amp;&amp; dinfo-&gt;cmp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -192,6 +174,24 @@ Functions</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">dinfo</td><td>)</td>
           <td>&#160;&#160;&#160;(dinfo &amp;&amp; dinfo-&gt;hash)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77986dc5578e383855da247bb068971d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77986dc5578e383855da247bb068971d">&#9670;&nbsp;</a></span>CDC_HAS_CP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CDC_HAS_CP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dinfo</td><td>)</td>
+          <td>&#160;&#160;&#160;(dinfo &amp;&amp; dinfo-&gt;cp)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,6 +264,48 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cdc_eq </td>
+          <td>(</td>
+          <td class="paramtype">int(*)(const void *, const void *)&#160;</td>
+          <td class="paramname"><em>pred</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b29f7c8abc5f3f580c2120f6e19c434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b29f7c8abc5f3f580c2120f6e19c434">&#9670;&nbsp;</a></span>cdc_not_eq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int cdc_not_eq </td>
           <td>(</td>
           <td class="paramtype">int(*)(const void *, const void *)&#160;</td>
           <td class="paramname"><em>pred</em>, </td>
@@ -390,48 +432,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static int cdc_lte </td>
-          <td>(</td>
-          <td class="paramtype">int(*)(const void *, const void *)&#160;</td>
-          <td class="paramname"><em>pred</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>r</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2b29f7c8abc5f3f580c2120f6e19c434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b29f7c8abc5f3f580c2120f6e19c434">&#9670;&nbsp;</a></span>cdc_not_eq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int cdc_not_eq </td>
           <td>(</td>
           <td class="paramtype">int(*)(const void *, const void *)&#160;</td>
           <td class="paramname"><em>pred</em>, </td>

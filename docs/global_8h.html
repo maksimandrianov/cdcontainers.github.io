@@ -83,6 +83,24 @@ Macros</h2></td></tr>
 <tr class="separator:a5c69931dd5ab4ed95fd0a600c1ae1815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a0925222e5314954d861fb0d736bfe1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0925222e5314954d861fb0d736bfe1d0">&#9670;&nbsp;</a></span>CDC_UNUSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CDC_UNUSED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(void)(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5c69931dd5ab4ed95fd0a600c1ae1815"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c69931dd5ab4ed95fd0a600c1ae1815">&#9670;&nbsp;</a></span>CDC_CHECK</h2>
 
@@ -109,24 +127,6 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                        \</div><div class="line">    if (X) {                                                                  \</div><div class="line">    } <span class="keywordflow">else</span> {                                                                  \</div><div class="line">      fprintf(stderr, <span class="stringliteral">&quot;%s (%s:%d) %s\n&quot;</span>, <span class="stringliteral">&quot;CHECK(&quot;</span> #X <span class="stringliteral">&quot;)&quot;</span>, __FILE__, __LINE__, \</div><div class="line">              msg);                                                           \</div><div class="line">      exit(EXIT_FAILURE);                                                     \</div><div class="line">    }                                                                         \</div><div class="line">  } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a0925222e5314954d861fb0d736bfe1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0925222e5314954d861fb0d736bfe1d0">&#9670;&nbsp;</a></span>CDC_UNUSED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CDC_UNUSED</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;(void)(x)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 </div>
 </div>
 </div><!-- contents -->

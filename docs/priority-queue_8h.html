@@ -300,6 +300,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af8846674a336d4c39998e32cb1f5b218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8846674a336d4c39998e32cb1f5b218">&#9670;&nbsp;</a></span>cdc_priority_queue_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_priority_queue_top </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the priority queue's top item. This function assumes that the priority queue isn't empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__priority__queue.html" title="The cdc_priority_queue struct. ">cdc_priority_queue</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>top item </dd></dl>
+
+</div>
+</div>
 <a id="a697c711c8ac9f1939244dd3f6de5b9bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a697c711c8ac9f1939244dd3f6de5b9bf">&#9670;&nbsp;</a></span>cdc_priority_queue_empty()</h2>
 
@@ -335,8 +370,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a547acf95d3c549fcb83e204e3dc4cac3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a547acf95d3c549fcb83e204e3dc4cac3">&#9670;&nbsp;</a></span>cdc_priority_queue_pop()</h2>
+<a id="a53de6085d22941118c14245ffc539668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53de6085d22941118c14245ffc539668">&#9670;&nbsp;</a></span>cdc_priority_queue_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,7 +380,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void cdc_priority_queue_pop </td>
+          <td class="memname">static size_t cdc_priority_queue_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -359,13 +394,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes the top element. </p>
+<p>Returns the number of items in the priority queue. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__priority__queue.html" title="The cdc_priority_queue struct. ">cdc_priority_queue</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>
@@ -415,8 +451,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a53de6085d22941118c14245ffc539668"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53de6085d22941118c14245ffc539668">&#9670;&nbsp;</a></span>cdc_priority_queue_size()</h2>
+<a id="a547acf95d3c549fcb83e204e3dc4cac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547acf95d3c549fcb83e204e3dc4cac3">&#9670;&nbsp;</a></span>cdc_priority_queue_pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +461,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t cdc_priority_queue_size </td>
+          <td class="memname">static void cdc_priority_queue_pop </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -439,14 +475,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of items in the priority queue. </p>
+<p>Removes the top element. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__priority__queue.html" title="The cdc_priority_queue struct. ">cdc_priority_queue</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
 
 </div>
 </div>
@@ -484,41 +519,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="af8846674a336d4c39998e32cb1f5b218"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8846674a336d4c39998e32cb1f5b218">&#9670;&nbsp;</a></span>cdc_priority_queue_top()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_priority_queue_top </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__priority__queue.html">cdc_priority_queue</a> *&#160;</td>
-          <td class="paramname"><em>q</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the priority queue's top item. This function assumes that the priority queue isn't empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">q</td><td>- <a class="el" href="structcdc__priority__queue.html" title="The cdc_priority_queue struct. ">cdc_priority_queue</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>top item </dd></dl>
 
 </div>
 </div>

@@ -133,42 +133,6 @@ Functions</h2></td></tr>
 <tr class="separator:a3837498d7865366a6ee77fd24ea4dfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a9745d0daccd27712993b87e3edef00f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9745d0daccd27712993b87e3edef00f9">&#9670;&nbsp;</a></span>CDC_ABS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CDC_ABS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((x &lt; 0) ? -(x) : x)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4448ac37ee25fdc779fc22c53efeb66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4448ac37ee25fdc779fc22c53efeb66">&#9670;&nbsp;</a></span>CDC_ARRAY_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CDC_ARRAY_SIZE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;(sizeof(x) / sizeof(x[0]))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8855215f90c5fb7dc197d3e71c3cb39b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8855215f90c5fb7dc197d3e71c3cb39b">&#9670;&nbsp;</a></span>CDC_END</h2>
 
@@ -181,20 +145,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a4a2525aad2bb83f497f6fe002aaf7763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a2525aad2bb83f497f6fe002aaf7763">&#9670;&nbsp;</a></span>CDC_INIT_STRUCT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CDC_INIT_STRUCT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                     \</div><div class="line">    0,                  \</div><div class="line">  }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a39c7844cd7fbfd0a8f72282bf9e39e11"></a>
@@ -253,28 +203,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac7b8ec2a50b4bc042944469fc7ec599d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b8ec2a50b4bc042944469fc7ec599d">&#9670;&nbsp;</a></span>CDC_STATIC_ASSERT</h2>
+<a id="a9745d0daccd27712993b87e3edef00f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9745d0daccd27712993b87e3edef00f9">&#9670;&nbsp;</a></span>CDC_ABS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CDC_STATIC_ASSERT</td>
+          <td class="memname">#define CDC_ABS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">COND, </td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x &lt; 0) ? -(x) : x)</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4448ac37ee25fdc779fc22c53efeb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4448ac37ee25fdc779fc22c53efeb66">&#9670;&nbsp;</a></span>CDC_ARRAY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
+          <td class="memname">#define CDC_ARRAY_SIZE</td>
+          <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">MSG&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;typedef char cdc_static_assertion_##MSG[(COND) ? 1 : -1]</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(sizeof(x) / sizeof(x[0]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -315,35 +273,49 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                    \</div><div class="line">    T tmp = x;            \</div><div class="line">    x = y;                \</div><div class="line">    y = tmp;              \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 </div>
 </div>
+<a id="a4a2525aad2bb83f497f6fe002aaf7763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2525aad2bb83f497f6fe002aaf7763">&#9670;&nbsp;</a></span>CDC_INIT_STRUCT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CDC_INIT_STRUCT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                     \</div><div class="line">    0,                  \</div><div class="line">  }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ac7b8ec2a50b4bc042944469fc7ec599d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b8ec2a50b4bc042944469fc7ec599d">&#9670;&nbsp;</a></span>CDC_STATIC_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CDC_STATIC_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">COND, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MSG&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;typedef char cdc_static_assertion_##MSG[(COND) ? 1 : -1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ae7c65c79cbcd30e3710dffa7829ade3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7c65c79cbcd30e3710dffa7829ade3c">&#9670;&nbsp;</a></span>cdc_binary_pred_fn_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int(* cdc_binary_pred_fn_t) (const void *, const void *)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5e13388d5c263a4e8553d95b48e74df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e13388d5c263a4e8553d95b48e74df6">&#9670;&nbsp;</a></span>cdc_copy_fn_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* cdc_copy_fn_t) (void *, const void *)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af7c34b27f2a151bddc3285f201c02974"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7c34b27f2a151bddc3285f201c02974">&#9670;&nbsp;</a></span>cdc_free_fn_t</h2>
 
@@ -366,6 +338,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef int(* cdc_unary_pred_fn_t) (const void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7c65c79cbcd30e3710dffa7829ade3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c65c79cbcd30e3710dffa7829ade3c">&#9670;&nbsp;</a></span>cdc_binary_pred_fn_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* cdc_binary_pred_fn_t) (const void *, const void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e13388d5c263a4e8553d95b48e74df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e13388d5c263a4e8553d95b48e74df6">&#9670;&nbsp;</a></span>cdc_copy_fn_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* cdc_copy_fn_t) (void *, const void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">

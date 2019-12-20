@@ -153,76 +153,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> is a struct and functions that provide a pairing heap. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ad8473935f4bf9dbefc7673fd0e1011c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8473935f4bf9dbefc7673fd0e1011c4">&#9670;&nbsp;</a></span>cdc_pairing_heap_change_key()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_pairing_heap_change_key </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap__iter.html">cdc_pairing_heap_iter</a> *&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the item key on the pos position in the pairing heap. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-    <tr><td class="paramname">pos</td><td>- iterator that indicates the item with key that you want to change </td></tr>
-    <tr><td class="paramname">key</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1cc8d649cd246ed9c0e75d7d3a42aa80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cc8d649cd246ed9c0e75d7d3a42aa80">&#9670;&nbsp;</a></span>cdc_pairing_heap_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_pairing_heap_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the pairing heap. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="af13756a1ea10ebfb0c4f3d016463db55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af13756a1ea10ebfb0c4f3d016463db55">&#9670;&nbsp;</a></span>cdc_pairing_heap_ctor()</h2>
 
@@ -375,6 +305,76 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a151b4fd6f354fd5d66ce55069f3ed676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151b4fd6f354fd5d66ce55069f3ed676">&#9670;&nbsp;</a></span>cdc_pairing_heap_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_pairing_heap_top </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the pairing heap's top item. This function assumes that the pairing heap isn't empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>top item </dd></dl>
+
+</div>
+</div>
+<a id="a0357b69b019a888a725347558b4584db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0357b69b019a888a725347558b4584db">&#9670;&nbsp;</a></span>cdc_pairing_heap_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_pairing_heap_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the pairing heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
+
+</div>
+</div>
 <a id="a7b92e8a90376bdbd5012a435cf6e2c39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b92e8a90376bdbd5012a435cf6e2c39">&#9670;&nbsp;</a></span>cdc_pairing_heap_empty()</h2>
 
@@ -437,6 +437,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8e046e7e3b081f35915a190981c6773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e046e7e3b081f35915a190981c6773">&#9670;&nbsp;</a></span>cdc_pairing_heap_riinsert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_pairing_heap_riinsert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap__iter.html">cdc_pairing_heap_iter</a> *&#160;</td>
+          <td class="paramname"><em>ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts element key to the pairing heap. Write an iterator pointing to a new element in the ret. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>a <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+    <tr><td class="paramname">key</td><td></td></tr>
+    <tr><td class="paramname">ret</td><td>- pointer to iterator where an iterator will be written indicating the inserted element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+
+</div>
+</div>
 <a id="acd9a80cd9b397188c8def1a0d060ac22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd9a80cd9b397188c8def1a0d060ac22">&#9670;&nbsp;</a></span>cdc_pairing_heap_insert()</h2>
 
@@ -480,6 +525,150 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
+
+</div>
+</div>
+<a id="ad8473935f4bf9dbefc7673fd0e1011c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8473935f4bf9dbefc7673fd0e1011c4">&#9670;&nbsp;</a></span>cdc_pairing_heap_change_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_pairing_heap_change_key </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap__iter.html">cdc_pairing_heap_iter</a> *&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the item key on the pos position in the pairing heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+    <tr><td class="paramname">pos</td><td>- iterator that indicates the item with key that you want to change </td></tr>
+    <tr><td class="paramname">key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1cc8d649cd246ed9c0e75d7d3a42aa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc8d649cd246ed9c0e75d7d3a42aa80">&#9670;&nbsp;</a></span>cdc_pairing_heap_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_pairing_heap_clear </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all the elements from the pairing heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81f63cf57ec2c970885a7f8cf7fa7352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f63cf57ec2c970885a7f8cf7fa7352">&#9670;&nbsp;</a></span>cdc_pairing_heap_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_pairing_heap_swap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swaps pairing heaps a and b. This operation is very fast and never fails. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+    <tr><td class="paramname">b</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a8f41c45c4d78ce1a41362d27869fbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a8f41c45c4d78ce1a41362d27869fbf">&#9670;&nbsp;</a></span>cdc_pairing_heap_merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_pairing_heap_merge </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges two heaps. In the heap h will be the result of the merger, and the heap other will remain empty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+    <tr><td class="paramname">other</td><td>- other <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -573,195 +762,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns false if the iterator it1 equal to the iterator it2, otherwise returns false. </p>
-
-</div>
-</div>
-<a id="a9a8f41c45c4d78ce1a41362d27869fbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a8f41c45c4d78ce1a41362d27869fbf">&#9670;&nbsp;</a></span>cdc_pairing_heap_merge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_pairing_heap_merge </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>other</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Merges two heaps. In the heap h will be the result of the merger, and the heap other will remain empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-    <tr><td class="paramname">other</td><td>- other <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad8e046e7e3b081f35915a190981c6773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8e046e7e3b081f35915a190981c6773">&#9670;&nbsp;</a></span>cdc_pairing_heap_riinsert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_pairing_heap_riinsert </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap__iter.html">cdc_pairing_heap_iter</a> *&#160;</td>
-          <td class="paramname"><em>ret</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inserts element key to the pairing heap. Write an iterator pointing to a new element in the ret. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>a <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-    <tr><td class="paramname">key</td><td></td></tr>
-    <tr><td class="paramname">ret</td><td>- pointer to iterator where an iterator will be written indicating the inserted element </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error </dd></dl>
-
-</div>
-</div>
-<a id="a0357b69b019a888a725347558b4584db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0357b69b019a888a725347558b4584db">&#9670;&nbsp;</a></span>cdc_pairing_heap_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_pairing_heap_size </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of items in the pairing heap. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>size </dd></dl>
-
-</div>
-</div>
-<a id="a81f63cf57ec2c970885a7f8cf7fa7352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81f63cf57ec2c970885a7f8cf7fa7352">&#9670;&nbsp;</a></span>cdc_pairing_heap_swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_pairing_heap_swap </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Swaps pairing heaps a and b. This operation is very fast and never fails. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-    <tr><td class="paramname">b</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a151b4fd6f354fd5d66ce55069f3ed676"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a151b4fd6f354fd5d66ce55069f3ed676">&#9670;&nbsp;</a></span>cdc_pairing_heap_top()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_pairing_heap_top </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__pairing__heap.html">cdc_pairing_heap</a> *&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pointer to the pairing heap's top item. This function assumes that the pairing heap isn't empty. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">h</td><td>- <a class="el" href="structcdc__pairing__heap.html" title="The cdc_pairing_heap struct. ">cdc_pairing_heap</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>top item </dd></dl>
 
 </div>
 </div>

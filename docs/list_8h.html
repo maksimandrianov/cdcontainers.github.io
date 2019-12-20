@@ -296,238 +296,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9cf76197d13f9466ae434e77df5b375e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cf76197d13f9466ae434e77df5b375e">&#9670;&nbsp;</a></span>cdc_list_at()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_at </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>elem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes to pointer an element from specified position in the list. Bounds checking is performed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to write at elem </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">elem</td><td>- pointer where an element will be written </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>DC_STATUS_OK in a successful case or CDC_STATUS_OUT_OF_RANGE if the index is incorrect. </dd></dl>
-
-</div>
-</div>
-<a id="a6a62aff406d6e736e3c0451ff7b5696a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a62aff406d6e736e3c0451ff7b5696a">&#9670;&nbsp;</a></span>cdc_list_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_list_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a last element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>last element in the list. </dd></dl>
-
-</div>
-</div>
-<a id="a26e33e62ea2228685c78ba44533ba2f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26e33e62ea2228685c78ba44533ba2f7">&#9670;&nbsp;</a></span>cdc_list_begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_begin </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes the iterator to the beginning. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__list__iter.html" title="The cdc_list_iterator is service struct. ">cdc_list_iter</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5828c967653cb7887d3d72c11dca7e12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5828c967653cb7887d3d72c11dca7e12">&#9670;&nbsp;</a></span>cdc_list_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6e4905846b27b2d9264976c20132ec23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e4905846b27b2d9264976c20132ec23">&#9670;&nbsp;</a></span>cdc_list_cmerge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_cmerge </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>compare</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Merges two sorted lists into one. The lists should be sorted. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- another <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> to merge </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">compare</td><td>- comparison function </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a16f142151201ad0a441fb84a0ee38ea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16f142151201ad0a441fb84a0ee38ea1">&#9670;&nbsp;</a></span>cdc_list_csort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_csort </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>compare</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sorts elements in ascending order. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">compare</td><td>- comparison function object which returns ​true if the first argument is less than (i.e. is ordered before) the second. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a848c24729f6ea77a8e0518f2f9c0c53a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a848c24729f6ea77a8e0518f2f9c0c53a">&#9670;&nbsp;</a></span>cdc_list_ctor()</h2>
 
@@ -680,8 +448,91 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aacb53ee74e3c02d1e9ddc61c54c9d294"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacb53ee74e3c02d1e9ddc61c54c9d294">&#9670;&nbsp;</a></span>cdc_list_empty()</h2>
+<a id="ae6c7873f4c0aed76d5a923aa5cbf487e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c7873f4c0aed76d5a923aa5cbf487e">&#9670;&nbsp;</a></span>cdc_list_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* cdc_list_get </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an element at index position index in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to return </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>element from |index| position. </dd></dl>
+
+</div>
+</div>
+<a id="a9cf76197d13f9466ae434e77df5b375e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf76197d13f9466ae434e77df5b375e">&#9670;&nbsp;</a></span>cdc_list_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_at </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>elem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes to pointer an element from specified position in the list. Bounds checking is performed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to write at elem </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">elem</td><td>- pointer where an element will be written </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DC_STATUS_OK in a successful case or CDC_STATUS_OUT_OF_RANGE if the index is incorrect. </dd></dl>
+
+</div>
+</div>
+<a id="ae531e57b41871fd438e04a771ccf56ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae531e57b41871fd438e04a771ccf56ca">&#9670;&nbsp;</a></span>cdc_list_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -690,7 +541,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool cdc_list_empty </td>
+          <td class="memname">static void* cdc_list_front </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
           <td class="paramname"><em>l</em></td><td>)</td>
@@ -704,14 +555,94 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if the list has no elements. </p>
+<p>Returns a first element in the list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the list is empty, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>first element in the list. </dd></dl>
+
+</div>
+</div>
+<a id="a6a62aff406d6e736e3c0451ff7b5696a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a62aff406d6e736e3c0451ff7b5696a">&#9670;&nbsp;</a></span>cdc_list_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_list_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a last element in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>last element in the list. </dd></dl>
+
+</div>
+</div>
+<a id="a26e33e62ea2228685c78ba44533ba2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e33e62ea2228685c78ba44533ba2f7">&#9670;&nbsp;</a></span>cdc_list_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_begin </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the iterator to the beginning. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__list__iter.html" title="The cdc_list_iterator is service struct. ">cdc_list_iter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -757,794 +688,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a0fe854ad9d2f4c4d3536f4b791ecd87a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fe854ad9d2f4c4d3536f4b791ecd87a">&#9670;&nbsp;</a></span>cdc_list_erase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_erase </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes an element at index position in the circular arrray. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5efa4109d66f0bb2f033b5600f0e06b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5efa4109d66f0bb2f033b5600f0e06b8">&#9670;&nbsp;</a></span>cdc_list_erase_if()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_erase_if </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#a6bc7cda4f22a4db485a6eddb27135f3a">cdc_unary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>pred</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes from the container all elements for which predicate pred returns true. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pred</td><td>- unary predicate which returns ​true if the element should be removed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afbb01300128a1543a61cff426e995cf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbb01300128a1543a61cff426e995cf5">&#9670;&nbsp;</a></span>cdc_list_foreach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_foreach </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(*)(void *)&#160;</td>
-          <td class="paramname"><em>cb</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A function |cb| is applied to each item of the list. </p>
-
-</div>
-</div>
-<a id="ae531e57b41871fd438e04a771ccf56ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae531e57b41871fd438e04a771ccf56ca">&#9670;&nbsp;</a></span>cdc_list_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_list_front </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a first element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>first element in the list. </dd></dl>
-
-</div>
-</div>
-<a id="ae6c7873f4c0aed76d5a923aa5cbf487e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6c7873f4c0aed76d5a923aa5cbf487e">&#9670;&nbsp;</a></span>cdc_list_get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* cdc_list_get </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns an element at index position index in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index of an element to return </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>element from |index| position. </dd></dl>
-
-</div>
-</div>
-<a id="aa6967597151f29c007927758ec7112d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6967597151f29c007927758ec7112d2">&#9670;&nbsp;</a></span>cdc_list_ierase()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_ierase </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes an element associated with the iterator pos from the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac5fc88ef2337838e5915814c7997a0ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5fc88ef2337838e5915814c7997a0ee">&#9670;&nbsp;</a></span>cdc_list_iinsert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_iinsert </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>before</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inserts an element in front of the item pointed to by the iterator before. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">before</td><td>- iterator position before which an element will be inserted </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
-
-</div>
-</div>
-<a id="abb7589456a5a3f610d79e84cd694937f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb7589456a5a3f610d79e84cd694937f">&#9670;&nbsp;</a></span>cdc_list_insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_insert </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inserts an element at |index| position in the list. If index is 0, the value is prepended to the list. If index is <a class="el" href="list_8h.html#a9552b5709adf88c8c4833e146a7bb4ab" title="Returns the number of elements in the list. ">cdc_list_size()</a>, the value is appended to the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be inserted </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
-
-</div>
-</div>
-<a id="a87547524a5c81f654b9ab9bae3acf649"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87547524a5c81f654b9ab9bae3acf649">&#9670;&nbsp;</a></span>cdc_list_iter_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_list_iter_data </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a current element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="add92b56623a0cb3011875fc8145f0ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add92b56623a0cb3011875fc8145f0ac8">&#9670;&nbsp;</a></span>cdc_list_iter_from()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_iter_from </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>rit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Сasts reverse iterator to iterator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rit</td><td>- reverse iterator </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a00e2f67fe4182ecc8f260656fc935e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00e2f67fe4182ecc8f260656fc935e32">&#9670;&nbsp;</a></span>cdc_list_iter_has_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_list_iter_has_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </dd></dl>
-
-</div>
-</div>
-<a id="ac564614ea513f50f14b1fa9f82ec7a84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac564614ea513f50f14b1fa9f82ec7a84">&#9670;&nbsp;</a></span>cdc_list_iter_has_prev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_list_iter_has_prev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </dd></dl>
-
-</div>
-</div>
-<a id="a1bbb2ed6e72ee30f287949d8bae60cc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bbb2ed6e72ee30f287949d8bae60cc9">&#9670;&nbsp;</a></span>cdc_list_iter_is_eq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_list_iter_is_eq </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it1</td><td>- iterator </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">it2</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
-
-</div>
-</div>
-<a id="afda48d52352fed06e4392264e9ccf61d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afda48d52352fed06e4392264e9ccf61d">&#9670;&nbsp;</a></span>cdc_list_iter_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_iter_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the next element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7073e664b404a43ac8252c0ba4d41d47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7073e664b404a43ac8252c0ba4d41d47">&#9670;&nbsp;</a></span>cdc_list_iter_prev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_iter_prev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the previous element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9f03ddc479424df06a0c99e6f2a3ee3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f03ddc479424df06a0c99e6f2a3ee3c">&#9670;&nbsp;</a></span>cdc_list_lsplice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_lsplice </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>other</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Transfers all elements from container other to another container at position before iterator position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>- iterator before which the content will be inserted </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a05ac2595082c0debc5bba3cbab75ab09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ac2595082c0debc5bba3cbab75ab09">&#9670;&nbsp;</a></span>cdc_list_merge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_merge </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>other</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Merges two sorted lists into one. The lists should be sorted into ascending order. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- another <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> to merge </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abed68786043971f58f1e054131dddf67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed68786043971f58f1e054131dddf67">&#9670;&nbsp;</a></span>cdc_list_pop_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_pop_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a last element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac19ab5563db227b8125dba986b15439a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac19ab5563db227b8125dba986b15439a">&#9670;&nbsp;</a></span>cdc_list_pop_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_pop_front </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes a first element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5197c1fe4026faed72fe61688b23bcd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5197c1fe4026faed72fe61688b23bcd2">&#9670;&nbsp;</a></span>cdc_list_punique()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_list_punique </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
-          <td class="paramname"><em>pred</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all consecutive duplicate elements from the container. Only the first element in each group of equal elements is left. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pred</td><td>- binary predicate which returns ​true if the elements should be treated as equal. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1c92888caaf52c673e4e6615e2f98972"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c92888caaf52c673e4e6615e2f98972">&#9670;&nbsp;</a></span>cdc_list_push_back()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_push_back </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inserts an element at the end of the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
-
-</div>
-</div>
-<a id="a46b9744bc4cff08cd35713b04e851528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b9744bc4cff08cd35713b04e851528">&#9670;&nbsp;</a></span>cdc_list_push_front()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_push_front </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inserts an element at the beginning of the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
 
 </div>
 </div>
@@ -1638,34 +781,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86d247c3e2e627ce263245bdba7c68d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86d247c3e2e627ce263245bdba7c68d9">&#9670;&nbsp;</a></span>cdc_list_reverse()</h2>
+<a id="a9552b5709adf88c8c4833e146a7bb4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9552b5709adf88c8c4833e146a7bb4ab">&#9670;&nbsp;</a></span>cdc_list_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_list_reverse </td>
+          <td class="memname">static size_t cdc_list_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
           <td class="paramname"><em>l</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Reverses the order of elements in the container. </p>
+<p>Returns the number of elements in the list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of elements in the list. </dd></dl>
 
 </div>
 </div>
-<a id="afdf4bfeb89659b4a2325b666faf63d4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdf4bfeb89659b4a2325b666faf63d4f">&#9670;&nbsp;</a></span>cdc_list_riter_data()</h2>
+<a id="aacb53ee74e3c02d1e9ddc61c54c9d294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb53ee74e3c02d1e9ddc61c54c9d294">&#9670;&nbsp;</a></span>cdc_list_empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1674,10 +826,10 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void* cdc_list_riter_data </td>
+          <td class="memname">static bool cdc_list_empty </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1688,241 +840,14 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a current element. </p>
+<p>Checks if the list has no elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="aac5138e2dd159ff9095ee318166e2b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5138e2dd159ff9095ee318166e2b66">&#9670;&nbsp;</a></span>cdc_list_riter_from()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_riter_from </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>rit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Сasts iterator to reverse iterator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">rit</td><td>- reverse iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af8942857a13be97eb0619455e9e729ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8942857a13be97eb0619455e9e729ec">&#9670;&nbsp;</a></span>cdc_list_riter_has_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_list_riter_has_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if there is at least one item ahead of the reverse iterator, i.e. the reverse iterator is not at the back of the container. otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is at least one item ahead of the reverse iterator, i.e. the reverse iterator is not at the back of the container. </dd></dl>
-
-</div>
-</div>
-<a id="ac9e7957a2cc6688ea931b8f001d99b52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e7957a2cc6688ea931b8f001d99b52">&#9670;&nbsp;</a></span>cdc_list_riter_has_prev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_list_riter_has_prev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if there is at least one item behind the reverse iterator, i.e. the reverse iterator is not at the front of the container; otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if there is at least one item behind the reverse iterator, i.e. the reverse iterator is not at the front of the container; otherwise returns false. </dd></dl>
-
-</div>
-</div>
-<a id="a557711932ae006dbc1e3d2c3f2f31ae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a557711932ae006dbc1e3d2c3f2f31ae9">&#9670;&nbsp;</a></span>cdc_list_riter_is_eq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_list_riter_is_eq </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>rit1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>rit2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns false if the reverse iterator |rit1| equal to the reverse iterator |rit2|, otherwise returns false. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rit1</td><td>- reverse iterator </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rit2</td><td>- reverse iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa6af762f0f090796a61ec4afe7f3fd8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6af762f0f090796a61ec4afe7f3fd8d">&#9670;&nbsp;</a></span>cdc_list_riter_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_riter_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Advances the reverse iterator to the next element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a669f8ce832e923ece753223b385829aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669f8ce832e923ece753223b385829aa">&#9670;&nbsp;</a></span>cdc_list_riter_prev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void cdc_list_riter_prev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Advances the reverse iterator to the previous element in the list. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the list is empty, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1970,49 +895,116 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9552b5709adf88c8c4833e146a7bb4ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9552b5709adf88c8c4833e146a7bb4ab">&#9670;&nbsp;</a></span>cdc_list_size()</h2>
+<a id="a1c92888caaf52c673e4e6615e2f98972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c92888caaf52c673e4e6615e2f98972">&#9670;&nbsp;</a></span>cdc_list_push_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t cdc_list_size </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_push_back </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element at the end of the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="abed68786043971f58f1e054131dddf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed68786043971f58f1e054131dddf67">&#9670;&nbsp;</a></span>cdc_list_pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_pop_back </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
           <td class="paramname"><em>l</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns the number of elements in the list. </p>
+<p>Removes a last element in the list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of elements in the list. </dd></dl>
 
 </div>
 </div>
-<a id="a3b7a54b5283033c4883c43b6b6903f94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b7a54b5283033c4883c43b6b6903f94">&#9670;&nbsp;</a></span>cdc_list_sort()</h2>
+<a id="a46b9744bc4cff08cd35713b04e851528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b9744bc4cff08cd35713b04e851528">&#9670;&nbsp;</a></span>cdc_list_push_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_list_sort </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_push_front </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element at the beginning of the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="ac19ab5563db227b8125dba986b15439a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19ab5563db227b8125dba986b15439a">&#9670;&nbsp;</a></span>cdc_list_pop_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_pop_front </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
           <td class="paramname"><em>l</em></td><td>)</td>
@@ -2021,10 +1013,219 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sorts elements in ascending order. </p>
+<p>Removes a first element in the list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb7589456a5a3f610d79e84cd694937f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7589456a5a3f610d79e84cd694937f">&#9670;&nbsp;</a></span>cdc_list_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element at |index| position in the list. If index is 0, the value is prepended to the list. If index is <a class="el" href="list_8h.html#a9552b5709adf88c8c4833e146a7bb4ab" title="Returns the number of elements in the list. ">cdc_list_size()</a>, the value is appended to the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be inserted </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="ac5fc88ef2337838e5915814c7997a0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fc88ef2337838e5915814c7997a0ee">&#9670;&nbsp;</a></span>cdc_list_iinsert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_list_iinsert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>before</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts an element in front of the item pointed to by the iterator before. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">before</td><td>- iterator position before which an element will be inserted </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK in a successful case or other value indicating an error. </dd></dl>
+
+</div>
+</div>
+<a id="a0fe854ad9d2f4c4d3536f4b791ecd87a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe854ad9d2f4c4d3536f4b791ecd87a">&#9670;&nbsp;</a></span>cdc_list_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an element at index position in the circular arrray. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- index position where an element will be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6967597151f29c007927758ec7112d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6967597151f29c007927758ec7112d2">&#9670;&nbsp;</a></span>cdc_list_ierase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_ierase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an element associated with the iterator pos from the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5828c967653cb7887d3d72c11dca7e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5828c967653cb7887d3d72c11dca7e12">&#9670;&nbsp;</a></span>cdc_list_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_clear </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all the elements from the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70f33ae6ea78a4ce9276d70a1960c1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f33ae6ea78a4ce9276d70a1960c1e8">&#9670;&nbsp;</a></span>cdc_list_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_swap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swaps lists a and b. This operation is very fast and never fails. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -2111,23 +1312,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a70f33ae6ea78a4ce9276d70a1960c1e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70f33ae6ea78a4ce9276d70a1960c1e8">&#9670;&nbsp;</a></span>cdc_list_swap()</h2>
+<a id="a9f03ddc479424df06a0c99e6f2a3ee3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f03ddc479424df06a0c99e6f2a3ee3c">&#9670;&nbsp;</a></span>cdc_list_lsplice()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_list_swap </td>
+          <td class="memname">void cdc_list_lsplice </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2137,11 +1338,155 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Swaps lists a and b. This operation is very fast and never fails. </p>
+<p>Transfers all elements from container other to another container at position before iterator position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>- iterator before which the content will be inserted </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05ac2595082c0debc5bba3cbab75ab09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ac2595082c0debc5bba3cbab75ab09">&#9670;&nbsp;</a></span>cdc_list_merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_merge </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges two sorted lists into one. The lists should be sorted into ascending order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- another <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> to merge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e4905846b27b2d9264976c20132ec23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4905846b27b2d9264976c20132ec23">&#9670;&nbsp;</a></span>cdc_list_cmerge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_cmerge </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
+          <td class="paramname"><em>compare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges two sorted lists into one. The lists should be sorted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>- another <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> to merge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compare</td><td>- comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5efa4109d66f0bb2f033b5600f0e06b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efa4109d66f0bb2f033b5600f0e06b8">&#9670;&nbsp;</a></span>cdc_list_erase_if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_erase_if </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_8h.html#a6bc7cda4f22a4db485a6eddb27135f3a">cdc_unary_pred_fn_t</a>&#160;</td>
+          <td class="paramname"><em>pred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes from the container all elements for which predicate pred returns true. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pred</td><td>- unary predicate which returns ​true if the element should be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86d247c3e2e627ce263245bdba7c68d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d247c3e2e627ce263245bdba7c68d9">&#9670;&nbsp;</a></span>cdc_list_reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_reverse </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverses the order of elements in the container. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -2168,6 +1513,661 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5197c1fe4026faed72fe61688b23bcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5197c1fe4026faed72fe61688b23bcd2">&#9670;&nbsp;</a></span>cdc_list_punique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_punique </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
+          <td class="paramname"><em>pred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all consecutive duplicate elements from the container. Only the first element in each group of equal elements is left. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pred</td><td>- binary predicate which returns ​true if the elements should be treated as equal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b7a54b5283033c4883c43b6b6903f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b7a54b5283033c4883c43b6b6903f94">&#9670;&nbsp;</a></span>cdc_list_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_sort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sorts elements in ascending order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16f142151201ad0a441fb84a0ee38ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f142151201ad0a441fb84a0ee38ea1">&#9670;&nbsp;</a></span>cdc_list_csort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_csort </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_8h.html#ae7c65c79cbcd30e3710dffa7829ade3c">cdc_binary_pred_fn_t</a>&#160;</td>
+          <td class="paramname"><em>compare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sorts elements in ascending order. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>- <a class="el" href="structcdc__list.html" title="The cdc_lisе is service struct. ">cdc_list</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">compare</td><td>- comparison function object which returns ​true if the first argument is less than (i.e. is ordered before) the second. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afbb01300128a1543a61cff426e995cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb01300128a1543a61cff426e995cf5">&#9670;&nbsp;</a></span>cdc_list_foreach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_list_foreach </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list.html">cdc_list</a> *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function |cb| is applied to each item of the list. </p>
+
+</div>
+</div>
+<a id="afda48d52352fed06e4392264e9ccf61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda48d52352fed06e4392264e9ccf61d">&#9670;&nbsp;</a></span>cdc_list_iter_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_iter_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the next element in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7073e664b404a43ac8252c0ba4d41d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7073e664b404a43ac8252c0ba4d41d47">&#9670;&nbsp;</a></span>cdc_list_iter_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_iter_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the previous element in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00e2f67fe4182ecc8f260656fc935e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e2f67fe4182ecc8f260656fc935e32">&#9670;&nbsp;</a></span>cdc_list_iter_has_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_list_iter_has_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element ahead of the iterator, i.e. the iterator is not at the back of the container; otherwise returns false. </dd></dl>
+
+</div>
+</div>
+<a id="ac564614ea513f50f14b1fa9f82ec7a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac564614ea513f50f14b1fa9f82ec7a84">&#9670;&nbsp;</a></span>cdc_list_iter_has_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_list_iter_has_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one element behind the iterator, i.e. the iterator is not at the front of the container; otherwise returns false. </dd></dl>
+
+</div>
+</div>
+<a id="a87547524a5c81f654b9ab9bae3acf649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87547524a5c81f654b9ab9bae3acf649">&#9670;&nbsp;</a></span>cdc_list_iter_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_list_iter_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a current element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add92b56623a0cb3011875fc8145f0ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add92b56623a0cb3011875fc8145f0ac8">&#9670;&nbsp;</a></span>cdc_list_iter_from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_iter_from </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>rit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сasts reverse iterator to iterator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rit</td><td>- reverse iterator </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bbb2ed6e72ee30f287949d8bae60cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bbb2ed6e72ee30f287949d8bae60cc9">&#9670;&nbsp;</a></span>cdc_list_iter_is_eq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_list_iter_is_eq </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it1</td><td>- iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">it2</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
+
+</div>
+</div>
+<a id="aa6af762f0f090796a61ec4afe7f3fd8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6af762f0f090796a61ec4afe7f3fd8d">&#9670;&nbsp;</a></span>cdc_list_riter_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_riter_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advances the reverse iterator to the next element in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a669f8ce832e923ece753223b385829aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669f8ce832e923ece753223b385829aa">&#9670;&nbsp;</a></span>cdc_list_riter_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_riter_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advances the reverse iterator to the previous element in the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8942857a13be97eb0619455e9e729ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8942857a13be97eb0619455e9e729ec">&#9670;&nbsp;</a></span>cdc_list_riter_has_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_list_riter_has_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there is at least one item ahead of the reverse iterator, i.e. the reverse iterator is not at the back of the container. otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one item ahead of the reverse iterator, i.e. the reverse iterator is not at the back of the container. </dd></dl>
+
+</div>
+</div>
+<a id="ac9e7957a2cc6688ea931b8f001d99b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e7957a2cc6688ea931b8f001d99b52">&#9670;&nbsp;</a></span>cdc_list_riter_has_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_list_riter_has_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if there is at least one item behind the reverse iterator, i.e. the reverse iterator is not at the front of the container; otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if there is at least one item behind the reverse iterator, i.e. the reverse iterator is not at the front of the container; otherwise returns false. </dd></dl>
+
+</div>
+</div>
+<a id="afdf4bfeb89659b4a2325b666faf63d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf4bfeb89659b4a2325b666faf63d4f">&#9670;&nbsp;</a></span>cdc_list_riter_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_list_riter_data </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a current element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- reverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac5138e2dd159ff9095ee318166e2b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5138e2dd159ff9095ee318166e2b66">&#9670;&nbsp;</a></span>cdc_list_riter_from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void cdc_list_riter_from </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__iter.html">cdc_list_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>rit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сasts iterator to reverse iterator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rit</td><td>- reverse iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a557711932ae006dbc1e3d2c3f2f31ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557711932ae006dbc1e3d2c3f2f31ae9">&#9670;&nbsp;</a></span>cdc_list_riter_is_eq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_list_riter_is_eq </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>rit1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__list__riter.html">cdc_list_riter</a> *&#160;</td>
+          <td class="paramname"><em>rit2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false if the reverse iterator |rit1| equal to the reverse iterator |rit2|, otherwise returns false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rit1</td><td>- reverse iterator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rit2</td><td>- reverse iterator </td></tr>
   </table>
   </dd>
 </dl>

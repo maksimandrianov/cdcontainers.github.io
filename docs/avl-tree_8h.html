@@ -183,107 +183,6 @@ Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> is a struct and functions that provide a avl tree. </p>
 <dl class="section author"><dt>Author</dt><dd>Maksim Andrianov <a href="#" onclick="location.href='mai'+'lto:'+'mak'+'si'+'man'+'dr'+'ian'+'ov'+'1@y'+'an'+'dex'+'.r'+'u'; return false;">maksi<span style="display: none;">.nosp@m.</span>mand<span style="display: none;">.nosp@m.</span>riano<span style="display: none;">.nosp@m.</span>v1@y<span style="display: none;">.nosp@m.</span>andex<span style="display: none;">.nosp@m.</span>.ru</a> </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="afd50512fe381be9d7b7f8a7456c18d80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd50512fe381be9d7b7f8a7456c18d80">&#9670;&nbsp;</a></span>cdc_avl_tree_begin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_avl_tree_begin </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the iterator to the beginning. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__avl__tree__iter.html" title="The cdc_avl_tree_iter is service struct. ">cdc_avl_tree_iter</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afda7681248df3f1d09a04e811d88dc57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afda7681248df3f1d09a04e811d88dc57">&#9670;&nbsp;</a></span>cdc_avl_tree_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_avl_tree_clear </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Removes all the elements from the avl_tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab156736ac072ec579065515a675d5a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab156736ac072ec579065515a675d5a17">&#9670;&nbsp;</a></span>cdc_avl_tree_count()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t cdc_avl_tree_count </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements with key key, that is either 1 or 0. </dd></dl>
-
-</div>
-</div>
 <a id="af8c66d6dfcc656796d2c2e8fc4dea4a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8c66d6dfcc656796d2c2e8fc4dea4a3">&#9670;&nbsp;</a></span>cdc_avl_tree_ctor()</h2>
 
@@ -436,49 +335,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f5d561cb9898016336811ffc64add54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f5d561cb9898016336811ffc64add54">&#9670;&nbsp;</a></span>cdc_avl_tree_empty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool cdc_avl_tree_empty </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the avl tree has no elements. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the avl tree is empty, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="af2e3ff5673a8df87ba2c8422f6f6155e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e3ff5673a8df87ba2c8422f6f6155e">&#9670;&nbsp;</a></span>cdc_avl_tree_end()</h2>
+<a id="a7a3fe1461638ee15ca70690c4e6df005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3fe1461638ee15ca70690c4e6df005">&#9670;&nbsp;</a></span>cdc_avl_tree_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cdc_avl_tree_end </td>
+          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_avl_tree_get </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -486,8 +350,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -497,25 +367,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the iterator to the end. </p>
+<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__avl__tree__iter.html" title="The cdc_avl_tree_iter is service struct. ">cdc_avl_tree_iter</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
-<a id="acf960281fd163cef219e76d43833b0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf960281fd163cef219e76d43833b0d0">&#9670;&nbsp;</a></span>cdc_avl_tree_erase()</h2>
+<a id="ab156736ac072ec579065515a675d5a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab156736ac072ec579065515a675d5a17">&#9670;&nbsp;</a></span>cdc_avl_tree_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t cdc_avl_tree_erase </td>
+          <td class="memname">size_t cdc_avl_tree_count </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
           <td class="paramname"><em>t</em>, </td>
@@ -534,15 +406,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes the element (if one exists) with the key equivalent to key. </p>
+<p>Returns the number of elements with key that compares equal to the specified argument key, which is either 1 or 0 since this container does not allow duplicates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to count </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements with key key, that is either 1 or 0. </dd></dl>
 
 </div>
 </div>
@@ -590,48 +462,99 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a3fe1461638ee15ca70690c4e6df005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a3fe1461638ee15ca70690c4e6df005">&#9670;&nbsp;</a></span>cdc_avl_tree_get()</h2>
+<a id="a2953535f1a4876e8ba91f6001cb0bf3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2953535f1a4876e8ba91f6001cb0bf3e">&#9670;&nbsp;</a></span>cdc_avl_tree_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t cdc_avl_tree_size </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of items in the avl_tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of items in the avl_tree. </dd></dl>
+
+</div>
+</div>
+<a id="a8f5d561cb9898016336811ffc64add54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f5d561cb9898016336811ffc64add54">&#9670;&nbsp;</a></span>cdc_avl_tree_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool cdc_avl_tree_empty </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the avl tree has no elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the avl tree is empty, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afda7681248df3f1d09a04e811d88dc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda7681248df3f1d09a04e811d88dc57">&#9670;&nbsp;</a></span>cdc_avl_tree_clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="status_8h.html#a2797832cb633edfe953b69565d31f5c6">cdc_stat</a> cdc_avl_tree_get </td>
+          <td class="memname">void cdc_avl_tree_clear </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a value that is mapped to a key. If the key does not exist, then NULL will return. </p>
+<p>Removes all the elements from the avl_tree. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key of the element to find </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>- pinter to the value that is mapped to a key. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>CDC_STATUS_OK if the key is found, CDC_STATUS_NOT_FOUND otherwise. </dd></dl>
 
 </div>
 </div>
@@ -857,6 +780,207 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acf960281fd163cef219e76d43833b0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf960281fd163cef219e76d43833b0d0">&#9670;&nbsp;</a></span>cdc_avl_tree_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t cdc_avl_tree_erase </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the element (if one exists) with the key equivalent to key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>- key value of the elements to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of elements removed. </dd></dl>
+
+</div>
+</div>
+<a id="a963fb04960e974202750cfd4b8c43994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963fb04960e974202750cfd4b8c43994">&#9670;&nbsp;</a></span>cdc_avl_tree_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_avl_tree_swap </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swaps avl_trees a and b. This operation is very fast and never fails. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd50512fe381be9d7b7f8a7456c18d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd50512fe381be9d7b7f8a7456c18d80">&#9670;&nbsp;</a></span>cdc_avl_tree_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_avl_tree_begin </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the iterator to the beginning. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__avl__tree__iter.html" title="The cdc_avl_tree_iter is service struct. ">cdc_avl_tree_iter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2e3ff5673a8df87ba2c8422f6f6155e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e3ff5673a8df87ba2c8422f6f6155e">&#9670;&nbsp;</a></span>cdc_avl_tree_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_avl_tree_end </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the iterator to the end. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">it</td><td>- <a class="el" href="structcdc__avl__tree__iter.html" title="The cdc_avl_tree_iter is service struct. ">cdc_avl_tree_iter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a862ee0562ade393fcbfdf803e8dbad74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862ee0562ade393fcbfdf803e8dbad74">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_avl_tree_iter_next </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the next element in the avl tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1912944785e67fd3dc20091f77d8e91d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1912944785e67fd3dc20091f77d8e91d">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cdc_avl_tree_iter_prev </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advances the iterator to the previous element in the avl tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa9d9892c380f761d657e237b231a50ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9d9892c380f761d657e237b231a50ec">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_has_next()</h2>
 
@@ -927,6 +1051,111 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a956fdeadf6572578dfc93e4d7c6f404c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956fdeadf6572578dfc93e4d7c6f404c">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_avl_tree_iter_key </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an item's key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
+
+</div>
+</div>
+<a id="a8fe199e1704a8d929adaded146c4679d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe199e1704a8d929adaded146c4679d">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* cdc_avl_tree_iter_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an item's value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
+
+</div>
+</div>
+<a id="ad1372adf8a37217d21b4cb62f3c7ea84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1372adf8a37217d21b4cb62f3c7ea84">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_key_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a> cdc_avl_tree_iter_key_value </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pair, where first - key, second - value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
+
+</div>
+</div>
 <a id="a93824aac755f78c3a5f2ffe9fd86b27d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93824aac755f78c3a5f2ffe9fd86b27d">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_is_eq()</h2>
 
@@ -970,235 +1199,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if the iterator |it1| equal to the iterator |it2|, otherwise returns false. </dd></dl>
-
-</div>
-</div>
-<a id="a956fdeadf6572578dfc93e4d7c6f404c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a956fdeadf6572578dfc93e4d7c6f404c">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_key()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_avl_tree_iter_key </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an item's key. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the item's key. </dd></dl>
-
-</div>
-</div>
-<a id="ad1372adf8a37217d21b4cb62f3c7ea84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1372adf8a37217d21b4cb62f3c7ea84">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_key_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static struct <a class="el" href="structcdc__pair.html">cdc_pair</a> cdc_avl_tree_iter_key_value </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a pair, where first - key, second - value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pair, where first - key, second - value. </dd></dl>
-
-</div>
-</div>
-<a id="a862ee0562ade393fcbfdf803e8dbad74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a862ee0562ade393fcbfdf803e8dbad74">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_avl_tree_iter_next </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the next element in the avl tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1912944785e67fd3dc20091f77d8e91d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1912944785e67fd3dc20091f77d8e91d">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_prev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_avl_tree_iter_prev </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Advances the iterator to the previous element in the avl tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8fe199e1704a8d929adaded146c4679d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe199e1704a8d929adaded146c4679d">&#9670;&nbsp;</a></span>cdc_avl_tree_iter_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void* cdc_avl_tree_iter_value </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree__iter.html">cdc_avl_tree_iter</a> *&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an item's value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">it</td><td>- iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the item's value. </dd></dl>
-
-</div>
-</div>
-<a id="a2953535f1a4876e8ba91f6001cb0bf3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2953535f1a4876e8ba91f6001cb0bf3e">&#9670;&nbsp;</a></span>cdc_avl_tree_size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static size_t cdc_avl_tree_size </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of items in the avl_tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the number of items in the avl_tree. </dd></dl>
-
-</div>
-</div>
-<a id="a963fb04960e974202750cfd4b8c43994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a963fb04960e974202750cfd4b8c43994">&#9670;&nbsp;</a></span>cdc_avl_tree_swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void cdc_avl_tree_swap </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structcdc__avl__tree.html">cdc_avl_tree</a> *&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Swaps avl_trees a and b. This operation is very fast and never fails. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">a</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">b</td><td>- <a class="el" href="structcdc__avl__tree.html" title="The cdc_avl_tree is service struct. ">cdc_avl_tree</a> </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
