@@ -31,7 +31,6 @@ var searchData=
   ['cdc_5fhas_5fhash',['CDC_HAS_HASH',['../data-info_8h.html#a2a7c78a3fd31505e2e9074941f4b35cf',1,'data-info.h']]],
   ['cdc_5fhas_5fsize',['CDC_HAS_SIZE',['../data-info_8h.html#acbf0ab64e5c5904469f6070c69bdf91a',1,'data-info.h']]],
   ['cdc_5finit_5fstruct',['CDC_INIT_STRUCT',['../common_8h.html#a4a2525aad2bb83f497f6fe002aaf7763',1,'common.h']]],
-  ['cdc_5flist_5ffor_5feach',['CDC_LIST_FOR_EACH',['../list_8h.html#a153713bbf655096c9079db48ebe631df',1,'list.h']]],
   ['cdc_5flong_5fcast',['CDC_LONG_CAST',['../casts_8h.html#a539c6efea2d70d174cf1a6b48762ae74',1,'casts.h']]],
   ['cdc_5fmake_5ffind_5fnode_5ffn',['CDC_MAKE_FIND_NODE_FN',['../tree-utils_8h.html#ab236165a13619e07ba8d498ea0756751',1,'tree-utils.h']]],
   ['cdc_5fmake_5fmax_5fnode_5ffn',['CDC_MAKE_MAX_NODE_FN',['../tree-utils_8h.html#aa46d44a4c8607941e40767c7635c07c9',1,'tree-utils.h']]],
